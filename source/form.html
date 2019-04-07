@@ -22,16 +22,20 @@
 						<a href="#">HTML Academy</a>
 					</li>
 				</ul>
-			</nav>
+      </nav>
+      <h1 class="visually-hidden">Седона-сайт путешествий в Аризону</h1>
 			<a class="logo">
 				<img src=""  width="" alt="Логотип Седоны">
 			</a>
-		</header>			
-		<main>
+		</header>
+		<main class="main-page">
 			<section class="feedback">
+        <div class="Wellcome-to-sedona">
 					<h2>Оставьте свой отзыв</h2>
 					<p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-					<div class="form-container">
+        </div>
+          <div class="form-container">
+            <h3 class="visually-hidden">Форма обратной связи:</h3>
 						<form class="form" method="post" action="https://echo.htmlacademy.ru">
 							<fieldset class="form-group">
 								<legend class="form-group__title">Представьтесь:</legend>
@@ -58,7 +62,7 @@
 								<input class="form-group__radio visually-hidden"  type="radio" name="negative-location" id="negative" value="negative">
 								<label class="form-group__radio-label"  for="negative">Скорее отрицательное</label>
 								<input class="form-group__radio visually-hidden" type="radio" name="difficult-answer" id="difficult" value="difficult">
-								<label class="form-group__radio-label"  for="difficult">Затрудняюсь ответить</label>                               
+								<label class="form-group__radio-label"  for="difficult">Затрудняюсь ответить</label>
 							</fieldset>
 							<fieldset class="form-group">
 								<legend class="form-title">Посещенные достопримечательности:</legend>
@@ -70,12 +74,12 @@
 								<label class="form-group__checkbox-label"  for="park">Слайд-парк</label>
 								<input class="form-group__checkbox visually-hidden" type="checkbox" name="red-rocks" id="rocks">
 								<label class="form-group__checkbox-label" for="rocks">Красные скалы</label>
-							</fieldset> 
-							<fieldset> 
+							</fieldset>
+							<fieldset>
 								<legend class="form-title">Опишите свои эмоции:</legend>
 								<textarea class="form-group__textarea" name="comment" id="comment-field" rows="10" placeholder="Опишите подробно все свои восторги">
 								</textarea>
-							</fieldset> 
+							</fieldset>
 					<button  class="btn btn__form" type="submit">Отправить отзыв</button>
 							</form>
 					</div>
@@ -84,7 +88,7 @@
 		<footer class="page-footer">
 			<div class="page-footer__visit-sedona">#visitSEDONA</div>
 			<div class="social">
-				<h4 class="visually-hidden">Социальные сети</h4>
+				<h5 class="visually-hidden">Социальные сети</h5>
 					<ul class="social__list">
 						<li class="social__item">
 							<a class="social__btn" href="#" aria-label="Наша страничка в Твиттере">
