@@ -1,11 +1,9 @@
 .wrapper {
-
+  padding: 20px 41px;
 }
 
 .page-main {
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 400;
+  .font-main();
   text-align: center;
   color: @darkgrey;
 }
@@ -19,26 +17,129 @@
 }
 
 .town,
-.promotion-sedona__title,
+.promotion-title,
 .advantages__title {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
+  .font-bold();
   margin-top: 35px;
 }
 
-.promotion-sedona {
+.promotion-item {
   background-color: @bg-darkblue;
+  color: @white;
+}
+
+.promotion__item--one {
+  padding: 45px 22px 61px 28px;
+  margin-top: 45px;
+  margin-bottom: 42px;
+}
+
+.promotion__item--two {
+  padding: 45px 0 42px 0;
+  height: 104px;
+  margin-top: 45px;
+  margin-bottom: 42px;
 }
 
 .advantages__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  .reset-lists();
   padding-left: 69px;
   padding-right: 41px;
 }
 
 .wellcome__town {
   min-height: 471px;
+}
+
+.promotion-sedona {
+  background-color: @lightgrey;
+}
+
+.btn {
+  .font-super;
+  background-color: @bg-darkblue;
+  color: @white;
+  width: 186px;
+  height: 22px;
+  padding: 17px 47px 19px;
+  text-decoration: none;
+}
+
+.hotel {
+  margin-bottom: 40px;
+  width: 260px;
+  height: 107px;
+}
+
+.promotion-town {
+  margin-bottom: 49px;
+}
+
+.hotel__title {
+  .font-super();
+}
+
+.hotel__promotion {
+  margin: 33px 30px;
+}
+
+.advantages__item {
+  height: 92px;
+  margin-bottom: 38px;
+  text-align: start;
+}
+
+.advantages__item--hosing {
+  width: 210px;
+}
+
+.advantages__item--hosing::after {
+  background-image: url("img/icon-house.svg");
+}
+
+.map {
+  margin-bottom: 29px;
+}
+
+.page-footer__visit-sedona {
+  .font-super();
+  height: 16px;
+  text-align: center;
+  margin-bottom: 47px;
+}
+
+.social {
+  margin-bottom: 41px;
+}
+
+.social__list {
+  .reset-lists();
+  display: flex;
+  margin: 0 84px;
+}
+
+.page-footer__copyright {
+  display: flex;
+  margin-left: 95px;
+  margin-bottom: 40px;
+}
+
+.social__item {
+  width: 46px;
+  height: 48px;
+  background-color: @bg-darkblue;
+  margin-right: 6px;
+}
+
+.social__item--tw::before {
+  background-image: url("img/icon-twitter.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 17.5px;
+  height: 14.663px;
+}
+
+.page-footer__copyright--html {
+  margin-top: 20px;
+  margin-left: 10px;
 }
