@@ -14,9 +14,7 @@
 .main-nav__list {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  .reset-lists();
 }
 
 .feedback-btn {
@@ -28,14 +26,16 @@
 }
 
 .main-nav__item {
-  height: 55px;
+  height: 35px;
   box-shadow: @box-shadow;
   text-align: center;
+  padding: 10px;
+  border-top: 1px solid rgba(215, 215, 215, 0.4);
 }
 
 .main-nav__link {
+  .font-bolder();
   color: @white;
-  font-weight: 700;
 }
 
 .page-header__logo {
