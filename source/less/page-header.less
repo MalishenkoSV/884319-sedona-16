@@ -1,10 +1,10 @@
-
 .main-nav__wrapper {
   width: 320px;
   min-height: 445px;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/intro.png");
   background-repeat: no-repeat;
   background-position: 0 56px;
+  margin-bottom: 42px;
 }
 
 .main-nav {
@@ -12,25 +12,18 @@
 }
 
 .main-nav__list {
+  .reset-lists();
   display: flex;
   flex-direction: column;
-  .reset-lists();
-}
-
-.feedback-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  height: 23px;
-  width: 22px;
 }
 
 .main-nav__item {
-  height: 35px;
+  height: 34px;
   box-shadow: @box-shadow;
   text-align: center;
   padding: 10px;
-  border-top: 1px solid rgba(215, 215, 215, 0.4);
+  border-top: 1px solid rgba(1, 1, 1, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .main-nav__link {

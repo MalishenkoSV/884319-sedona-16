@@ -23,22 +23,32 @@
   margin-top: 35px;
 }
 
-.promotion-item {
+.promotion__item {
+  .font-bold();
   background-color: @bg-darkblue;
   color: @white;
 }
 
+.promotion__item--description {
+  padding: 0 27px 0 28px;
+}
+
+.promotion__title {
+  .font-bold();
+  padding-bottom: 0;
+}
+
 .promotion__item--one {
-  padding: 45px 22px 61px 28px;
-  margin-top: 45px;
-  margin-bottom: 42px;
+  .font-main;
+  height: 125px;
+  padding-top: 31px;
+  padding-bottom: 45px;
 }
 
 .promotion__item--two {
   padding: 45px 0 42px 0;
   height: 104px;
-  margin-top: 45px;
-  margin-bottom: 42px;
+  margin-bottom: 45px;
 }
 
 .advantages__list {
@@ -47,8 +57,14 @@
   padding-right: 41px;
 }
 
-.wellcome__town {
+.wellcome {
   min-height: 471px;
+  margin-bottom: 29px;
+}
+
+.wellcome__town--description {
+  padding: 12px 32px;
+  padding-bottom: 0;
 }
 
 .promotion-sedona {
@@ -59,20 +75,23 @@
   .font-super;
   background-color: @bg-darkblue;
   color: @white;
-  width: 186px;
-  height: 22px;
+  width: 280px;
+  height: 58px;
   padding: 17px 47px 19px;
   text-decoration: none;
+  border: none;
 }
 
 .hotel {
   margin-bottom: 40px;
   width: 260px;
   height: 107px;
+  padding: 0 30px;
+  text-align: center;
 }
 
 .promotion-town {
-  margin-bottom: 49px;
+  padding-bottom: 49px;
 }
 
 .hotel__title {
@@ -99,47 +118,4 @@
 
 .map {
   margin-bottom: 29px;
-}
-
-.page-footer__visit-sedona {
-  .font-super();
-  height: 16px;
-  text-align: center;
-  margin-bottom: 47px;
-}
-
-.social {
-  margin-bottom: 41px;
-}
-
-.social__list {
-  .reset-lists();
-  display: flex;
-  margin: 0 84px;
-}
-
-.page-footer__copyright {
-  display: flex;
-  margin-left: 95px;
-  margin-bottom: 40px;
-}
-
-.social__item {
-  width: 46px;
-  height: 48px;
-  background-color: @bg-darkblue;
-  margin-right: 6px;
-}
-
-.social__item--tw::before {
-  background-image: url("img/icon-twitter.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  width: 17.5px;
-  height: 14.663px;
-}
-
-.page-footer__copyright--html {
-  margin-top: 20px;
-  margin-left: 10px;
 }
