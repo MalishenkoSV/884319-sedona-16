@@ -1,0 +1,31 @@
+.main-nav {
+  background-color: @bg-darkblue;
+}
+
+.main-nav__list {
+  .reset-lists;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav__btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 23px;
+  width: 22px;
+}
+
+.main-nav__link {
+  .font-bolder();
+  color: @white;
+}
+
+.main-nav__item {
+  height: 34px;
+  box-shadow: @box-shadow;
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid rgba(1, 1, 1, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
