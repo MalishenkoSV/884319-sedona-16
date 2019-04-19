@@ -1,0 +1,37 @@
+.main-nav__wrapper {
+  width: 320px;
+  min-height: 445px;
+  background-image: url("../img/intro.png");
+  background-repeat: no-repeat;
+  background-position: 0 56px;
+  margin-bottom: 42px;
+}
+
+.main-nav {
+  background-color: @bg-darkblue;
+}
+
+.main-nav__list {
+  .reset-lists();
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav__item {
+  height: 34px;
+  box-shadow: @box-shadow;
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid rgba(1, 1, 1, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.main-nav__link {
+  .font-bolder();
+  color: @white;
+}
+
+.page-header__logo {
+  padding-left: 110px;
+  padding-bottom: 56px;
+}
