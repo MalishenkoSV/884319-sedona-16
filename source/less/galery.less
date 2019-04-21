@@ -1,3 +1,8 @@
+.wrapper-gallery {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .gallery__promotion {
   margin: 33px 24px 33px 27px;
   padding: 0;
@@ -5,13 +10,20 @@
 
 .gallery__item-title {
   font-weight: 700;
+  text-align: start;
+  padding-left: 22px;
 }
 
 .gallery__item {
   margin: 0;
-  text-align: start;
   position: relative;
   padding: 22px 0;
+}
+
+.gallery__item p,
+.gallery__item span {
+  text-align: start;
+  padding-left: 22px;
 }
 
 .gallery__promotion-description {
@@ -25,7 +37,7 @@
   top: 400px;
   left: -20px;
   height: 1px;
-  width: 318px;
+  width: 100%;
   position: absolute;
   background-color: @bg-grey;
 }
