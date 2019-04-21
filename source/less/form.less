@@ -1,3 +1,8 @@
+.form {
+  margin: 0 auto;
+  width: 320px;
+}
+
 .form__title {
   .font-bold();
   padding: 0;
@@ -6,13 +11,18 @@
 }
 
 .form__group {
-  padding: 24px 20px 28px 20px;
-  margin: 0;
+  margin: 20px;
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
   flex-direction: column;
   border: none;
   text-align: start;
   border-bottom: 1px solid @bg-grey;
+}
+
+.form__group img {
+  padding: 24px 20px 28px 20px;
 }
 
 .form__text {
@@ -43,7 +53,7 @@
 
 .form__label {
   color: @darkgrey;
-  padding-left: 42px;
+  display: flex;
 }
 
 .form__text--tel {
@@ -73,6 +83,5 @@
 .form__textarea {
   background-color: @bg-lightgrey;
   border: none;
-  width: 279px;
-  height: 160px;
+  width: 100%;
 }
