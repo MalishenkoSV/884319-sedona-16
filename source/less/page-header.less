@@ -8,14 +8,21 @@
   padding-bottom: 56px;
 }
 
-.page-header__logo-small {
+.page-header__logo {
   background-color: @bg-darkblue;
-  background-image: url("img/bg-back-mobile@1x.jpg"), url("img/text-sedona.svg");
+  background-image: url("../img/bg-back-mobile@1x.jpg"), url("../img/text-sedona.svg"), url("../img/bg-intro-triangle-mobile.svg");
   background-repeat: no-repeat;
+  height: 387px;
+}
+
+.page-header::before {
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
+  background-repeat: no-repeat;top: 100px;
 }
 
 .page-header__logo-big {
   background-color: @bg-darkblue;
-  background-image: url("img/bg-back-mobile@1x.jpg"), url("img/bg-intro-triangle-mobile.svg"), url("img/text-sedona-index.svg.svg"), url("img/text-sedona.svg");
+  background-image: url("../img/bg-back-mobile@1x.jpg"), url("../img/bg-intro-triangle-mobile.svg"), url("img/text-sedona-index.svg.svg"), url("img/text-sedona.svg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
