@@ -1,21 +1,29 @@
+.wrapper-gallery {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .gallery__promotion {
   margin: 33px 24px 33px 27px;
   padding: 0;
 }
 
-figcaption {
+.gallery__item-title {
   font-weight: 700;
-}
-
-figure {
-  margin: 0;
-  padding: 0;
+  text-align: start;
+  padding-left: 22px;
 }
 
 .gallery__item {
-  text-align: start;
+  margin: 0;
   position: relative;
   padding: 22px 0;
+}
+
+.gallery__item p,
+.gallery__item span {
+  text-align: start;
+  padding-left: 22px;
 }
 
 .gallery__promotion-description {
@@ -24,17 +32,12 @@ figure {
   text-transform: none;
 }
 
-.wrapper-gallery {
-  padding: 20px;
-  padding-bottom: 39px;
-}
-
 .gallery__item::after {
   content: "";
   top: 400px;
   left: -20px;
   height: 1px;
-  width: 318px;
+  width: 100%;
   position: absolute;
   background-color: @bg-grey;
 }
