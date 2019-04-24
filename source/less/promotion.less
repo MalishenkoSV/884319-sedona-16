@@ -1,6 +1,5 @@
 .promotion {
   background-color: @lightgrey;
-
 }
 
 .promotion__title {
@@ -31,6 +30,29 @@
   margin-bottom: 45px;
 }
 
-.promotion__town {
-  padding-bottom: 49px;
+@media (min-width: @tablet-width) {
+  .promotion {
+    display: flex;
+  }
+
+  .promotion__item {
+    width: 256px;
+    height: 256px;
+  }
+
+  .promotion img {
+    width: 800px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promotion {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .promotion__item {
+    width: 400px;
+    height: 256px;
+  }
 }

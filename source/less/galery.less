@@ -27,9 +27,7 @@
 }
 
 .gallery__promotion-description {
-  margin: 0;
-  padding: 0;
-  text-transform: none;
+  .reset-p;
 }
 
 .gallery__item::after {
@@ -44,4 +42,14 @@
 
 .gallery__video {
   margin-bottom: 49px;
+}
+
+@media (min-width: @tablet-width) {
+  .gallery__promotion-description {
+    .reset-p;
+  }
+
+  .wrapper-gallery {
+    padding: 60px 0;
+  }
 }
