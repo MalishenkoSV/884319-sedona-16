@@ -20,17 +20,21 @@
 @media (min-width: @tablet-width) {
   .page-footer {
     background-color: @white;
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding: 60px 36px;
+  }
+
+  .page-footer__visit-sedona {
+    display: block;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-footer {
     background-color: @white;
-    display: flex;
     justify-content: space-between;
+    flex-direction: row;
     padding: 112px 36px;
   }
 }
