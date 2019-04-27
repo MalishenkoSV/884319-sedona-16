@@ -3,26 +3,26 @@
   background-color: @bg-darkblue;
   color: @white;
   display: inline-block;
-  width: 280px;
-  height: 58px;
-  padding: 17px 47px 19px;
+  max-width: 280px;
+  margin: 0 20px;
+  padding: 17px 47px 19px 47px;
   text-decoration: none;
   border: none;
 }
 
 .btn__form {
-  margin: 0;
+  margin: auto;
+  margin-top: 51px;
   margin-bottom: 78px;
 }
 
 @media (min-width: @tablet-width) {
   .btn {
-    width: 100%;
+    min-width: 458px;
+    box-sizing: border-box;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .btn {
-    width: 100%;
+  .btn__form {
+    margin: 0;
   }
 }

@@ -1,6 +1,5 @@
 .form {
-  margin: 0 auto;
-  width: 320px;
+  margin: 0 auto 47px;
 }
 
 .form__title {
@@ -8,10 +7,11 @@
   padding: 0;
   margin: 0;
   text-align: center;
+  margin-top: 24px;
 }
 
 .form__group {
-  margin: 20px;
+  .font-bold;
   margin-right: auto;
   margin-left: auto;
   display: flex;
@@ -32,8 +32,9 @@
   margin-bottom: 20px;
 }
 
-.form__group input::placeholder {
-  .font-bold();
+.form__group input::placeholder,
+.form__group--textarea::placeholder {
+  .font-bold;
   text-transform: none;
   padding-left: 22px;
   color: @black;
@@ -85,3 +86,69 @@
   border: none;
   width: 100%;
 }
+
+.form__description {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-top: 69px;
+  }
+
+  .form__group {
+    border: none;
+    margin: 0;
+  }
+
+  .form__group--one {
+    order: 2;
+  }
+
+  .form__group--two {
+    order: 3;
+    min-width: 960px;
+    flex-direction: row;
+  }
+
+  .form__group--three {
+    order: 1;
+  }
+
+  .form__group--four {
+    order: 4;
+    flex-direction: row;
+    width: 100%;
+
+  .form__group--textarea {
+    order: 5;
+    width: 100%;
+  }
+
+  .form__group--five {
+    order: 6;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 66px;
+    margin-top: 58px;
+    width: 100%;
+  }
+
+  .form__description {
+    align-self: flex-end;
+  }
+
+  .form__group input::placeholder {
+    .font-bold;
+    margin-left: 21px;
+  }
+
+  .form__title {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}
+
