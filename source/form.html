@@ -37,15 +37,14 @@
       </div>
     </header>
     <main class="main-page">
-      <section class="feedback">
+      <section class="feedback wrapper">
         <div class="feedback__sedona">
           <h2>Оставьте свой отзыв</h2>
-          <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <p class="feedback__sedona--description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
-        <div class="form-container">
-          <h3 class="visually-hidden">Форма обратной связи:</h3>
-          <form class="form" method="post" action="https://echo.htmlacademy.ru">
-            <fieldset class="form__group">
+        <h3 class="visually-hidden">Форма обратной связи:</h3>
+        <form class="form" method="post" action="https://echo.htmlacademy.ru">
+          <fieldset class="form__group form__group--one">
               <legend class="form__title">Представьтесь:</legend>
                 <label class="form__label" for="name">Имя*:
                   <input class="form__text form__text--name" type="text" id="name" name="user-name" placeholder="Петр">
@@ -56,15 +55,15 @@
                 <label class="form__label" for="middle-name">Отчество:
                   <input class="form__text form__text--middle" type="text" id="middle-name" name="patronymic-name" placeholder="Александрович">
                 </label>
-            </fieldset>
-            <fieldset class="form__group">
+          </fieldset>
+          <fieldset class="form__group form__group--two">
               <legend class="form__title">Контактная информация:</legend>
               <label class="form__label" for="tel">Контактный телефон*:</label>
               <input class="form__text form__text--tel" type="text" id="tel" name="tel-number" placeholder="Введите телефон">
               <label class="form__label" for="mail">Электронная почта*:</label>
               <input class="form__text form__text--mail" type="text" id="mail" name="e-mail" placeholder="Введите e-mail">
-            </fieldset>
-            <fieldset class="form__group">
+          </fieldset>
+          <fieldset class="form__group form__group--three">
               <legend class="form__title">Ваше общее впечатление:</legend>
               <input class="form__radio visually-hidden" type="radio" name="positive-location" id="positive" value="positive" checked>
               <label class="form__radio-label" for="positive">Скорее положительное</label>
@@ -72,8 +71,8 @@
               <label class="form__radio-label"  for="negative">Скорее отрицательное</label>
               <input class="form__radio visually-hidden" type="radio" name="difficult-answer" id="difficult" value="difficult">
               <label class="form__radio-label"  for="difficult">Затрудняюсь ответить</label>
-            </fieldset>
-            <fieldset class="form__group">
+          </fieldset>
+          <fieldset class="form__group form__group--four">
               <legend class="form__title">Посещенные достопримечательности:</legend>
               <input class="form__checkbox visually-hidden" type="checkbox" name="bridge-devil" id="bridge" checked>
               <label class="form__checkbox-label" for="bridge">Мост Дьявола</label>
@@ -83,17 +82,19 @@
               <label class="form__checkbox-label"  for="park">Слайд-парк</label>
               <input class="form__checkbox visually-hidden" type="checkbox" name="red-rocks" id="rocks">
               <label class="form__checkbox-label" for="rocks">Красные скалы</label>
-            </fieldset>
-            <fieldset class="form__group">
+          </fieldset>
+          <fieldset class="form__group form__group--textarea">
               <legend class="form__title">Опишите свои эмоции:</legend>
               <textarea class="form__textarea" name="comment" id="comment-field" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
-            </fieldset>
+          </fieldset>
+          <div class="form__group form__group--five">
             <button  class="btn btn__form" type="submit">Отправить отзыв</button>
-          </form>
-        </div>
+            <p class="form__description">*обязательные поля</p>
+          </div>
+        </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer wrapper">
       <div class="page-footer__visit-sedona">#visitSEDONA</div>
       <div class="social">
         <h5 class="visually-hidden">Социальные сети</h5>
