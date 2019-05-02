@@ -6,8 +6,8 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="fonts/ptsans.woff2" type="font/woff2" rel="preload" as="font">
     <link href="fonts/ptsansbold.woff2" type="font/woff2" rel="preload" as="font">
-    <link href="fonts/ptsansbold.woff" type="font/woff" rel="preload">
-    <link href="fonts/ptsans.woff" type="font/woff" rel="preload">
+    <link href="fonts/ptsansbold.woff" type="font/woff">
+    <link href="fonts/ptsans.woff" type="font/woff">
     <meta name="format-detection" content="telephone=no">
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -49,7 +49,15 @@
           <span> — №1 —</span>
           <p class="promotion__item--description">Cедона не аттракцион для туристов,там течет своя жизнь</p>
         </div>
-        <img class="promotion__sedona--photo" src="img/main-city-mobile@1x.jpg"  width="320px"  height="260px" alt="Фото Седоны"></img>
+        <picture>
+            <source  media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg,
+                               img/main-city-desktop@2x.jpg">
+            <source  media="(min-width: 960px)" srcset="img/main-city-tablet@1x.jpg,
+                               img/main-city-tablet@2x.jpg">
+            <source  media="(max-width: 959px)" srcset="img/main-city-mobile@1x.jpg,
+                               img/img/main-city-mobile@2x.jpg">
+           <img class="promotion__sedona--photo" src="img/main-city-mobile@1x.jpg"  width="320px"  height="260px" alt="Фото Седоны">
+        </picture>
       </section>
       <section class="wellcome__advantages">
         <h4 class="visually-hidden">Наши преимущества</h4>
