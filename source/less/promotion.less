@@ -1,5 +1,6 @@
 .promotion {
-  background-color: @lightgrey;
+  // background-color: @lightgrey;
+  background-color: red;
 }
 
 .promotion__title {
@@ -10,28 +11,41 @@
 
 .promotion__item {
   .font-bold();
+  width: 100%;
   background-color: @bg-darkblue;
   color: @white;
 }
 
 .promotion__item--description {
   padding: 0 27px 0 28px;
+  margin: auto;
 }
 
 .promotion__item--one {
   .font-main;
+  padding-top: 61px;
+  text-align: center;
+  position: relative;
+}
+
+.promotion__item--one::before {
+  contain: " ";
   background-image: url("../img/bg-triangle.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-size: 100%, 100%, cover;
+  background-size: 100%, cover;
 }
 
 .promotion__item--two {
   .font-main;
+  width: 100%;
 }
 
 .promotion__sedona--photo {
   display: block;
+  height: 389px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 @media (min-width: @tablet-width) {
@@ -45,7 +59,8 @@
   }
 
   .promotion__item {
-    flex-grow: 1;
+    width: 33%;
+    display: block;
   }
 
   .promotion__item--one {
@@ -53,6 +68,8 @@
   }
 
   .promotion__sedona--photo {
-    flex-grow: 2;
+    width: 67%;
+    background-size: cover;
+    object-fit: contain;
   }
 }

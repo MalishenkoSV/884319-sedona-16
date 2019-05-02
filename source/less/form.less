@@ -72,7 +72,7 @@
 
 .form__radio-label {
   padding-left: 78px;
-  .font-bold();
+  .font-bold;
   text-transform: none;
 }
 
@@ -100,18 +100,28 @@
   }
 
   .form__group {
-    border: none;
+    // border: none;
     margin: 0;
   }
 
   .form__group--one {
     order: 2;
+    justify-content: flex-end;
   }
+
+  .form__group--one input {
+    align-content: flex-end;
+  }
+
 
   .form__group--two {
     order: 3;
-    min-width: 960px;
+    min-width: 648px;
     flex-direction: row;
+  }
+
+  .form__group--two .form__text {
+    width: 100%;
   }
 
   .form__group--three {
@@ -122,6 +132,7 @@
     order: 4;
     flex-direction: row;
     width: 100%;
+  }
 
   .form__group--textarea {
     order: 5;
@@ -138,6 +149,8 @@
   }
 
   .form__description {
+    display: block;
+    .font-main;
     align-self: flex-end;
   }
 
@@ -151,4 +164,3 @@
     text-align: center;
   }
 }
-
