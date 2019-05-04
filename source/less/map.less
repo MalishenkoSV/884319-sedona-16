@@ -1,17 +1,30 @@
 .map {
-  margin-bottom: 41px;
   background-color: @beige;
 }
 
+.map__picture {
+  width: 100%;
+  max-height: 350px;
+}
+
+.map__photo {
+  object-fit: cover;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 @media (min-width: @tablet-width) {
   .map__photo {
     width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    background-size: 648px cover;
   }
 }
 
 @media (min-width: @desktop-width) {
   .map__photo {
-    width: 100%;
+    background-size: 1200px cover;
   }
 }

@@ -1,51 +1,49 @@
 .promotion {
-  // background-color: @lightgrey;
-  background-color: red;
+  background-color: @lightgrey;
 }
 
 .promotion__title {
   .font-bold();
-  margin-top: 35px;
-  padding-bottom: 0;
+  margin: 0;
 }
 
 .promotion__item {
+
+  text-align: center;
   .font-bold();
-  width: 100%;
+  position: relative;
+  padding: 61px 27px 45px 28px;
   background-color: @bg-darkblue;
   color: @white;
 }
 
-.promotion__item--description {
-  padding: 0 27px 0 28px;
-  margin: auto;
-}
-
 .promotion__item--one {
   .font-main;
-  padding-top: 61px;
-  text-align: center;
-  position: relative;
+}
+
+.promotion__item--description {
+  padding: 0;
+  margin: 0;
 }
 
 .promotion__item--one::before {
-  contain: " ";
+  contain: "";
+  top: -25px;
+  left: 0;
   background-image: url("../img/bg-triangle.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: 100%, cover;
 }
 
 .promotion__item--two {
   .font-main;
-  width: 100%;
+  padding: 30px 45px 31px 42px;
 }
 
-.promotion__sedona--photo {
+.promotion__sedona-photo {
   display: block;
-  height: 389px;
-  margin: 0 auto;
+  height: 260px;
+  width: 100%;
   text-align: center;
+  object-fit: cover;
 }
 
 @media (min-width: @tablet-width) {
@@ -58,18 +56,25 @@
     flex-direction: row-reverse;
   }
 
-  .promotion__item {
-    width: 33%;
-    display: block;
-  }
-
   .promotion__item--one {
     background-image: none;
   }
 
-  .promotion__sedona--photo {
-    width: 67%;
-    background-size: cover;
-    object-fit: contain;
+  .promotion__item {
+    width: 256px;
+  }
+
+  .promotion__picture {
+    max-width: 512px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promotion__item {
+    width: 400px;
+  }
+
+  .promotion__picture {
+    width: 800px;
   }
 }
