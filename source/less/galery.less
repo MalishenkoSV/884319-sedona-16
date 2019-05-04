@@ -1,5 +1,8 @@
 
 .gallery__promotion {
+  width: 269px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
   padding-top: 51px;
   position: relative;
@@ -7,19 +10,22 @@
 }
 
 .gallery__item-title {
+  text-align: start;
   font-weight: 700;
-  padding-left: 22px;
+  padding-left: 20px;
 }
 
 .gallery__item {
-  text-align: start;
   margin: 0;
   position: relative;
 }
 
 .gallery__item p,
 .gallery__item span {
-  padding-left: 22px;
+  margin: 0;
+  padding: 0;
+  text-align: start;
+  padding-left: 20px;
 }
 
 .gallery__promotion-description {
@@ -44,15 +50,6 @@
   width: 100%;
   position: absolute;
   background-color: @bg-grey;
-}
-
-.gallery__video {
-  margin-bottom: 49px;
-}
-
-.gallery__video-description {
-  display: block;
-  text-align: center;
 }
 
 .gallery__photo {
@@ -83,26 +80,24 @@
   }
 
   .gallery__item {
-    width: 50%;
     display: flex;
     flex-direction: column;
     background-color: @bg-lightgrey;
     padding: 0;
   }
 
+  .galery__picture--sunset {
+    width: 648px;
+    max-height: 400px;
+  }
+
   .galery__photo {
     width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    background-size: 648px cover;
+    object-fit: contain;
   }
 
   .gallery__item:nth-child(3) {
     background-color: @whitegrey;
-  }
-
-  .gallery__picture {
-    width: 100%;
   }
 
   .gallery__item span {
@@ -114,27 +109,6 @@
   .gallery__promotion::after {
     display: none;
   }
-
-  .gallery__video h3 {
-    .font-superbold;
-  }
-
-  .gallery__video {
-    max-width: 100%;
-    margin: 0;
-    margin-top: 68px;
-  }
-
-  .gallery__video img {
-    object-fit: contain;
-  }
-
-  .gallery__video-block {
-    max-width: 415px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 78px;
-  }
 }
 
 @media (min-width: @desktop-width) {
@@ -143,14 +117,20 @@
   }
 
   .gallery__item {
-    width: 33%;
+    width: 50%;
+    height: 267px;
   }
 
   .gallery__item--sunset {
+    width: 1200px;
+    height: 400px;
+  }
+
+  .gallery__picture {
     width: 100%;
   }
 
   .galery__photo {
-    background-size: 1200px cover;
+    object-fit: cover;
   }
 }

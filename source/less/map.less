@@ -15,16 +15,25 @@
 }
 
 @media (min-width: @tablet-width) {
+  .map__picture {
+    width: 648px;
+    max-height: 350px;
+  }
+
   .map__photo {
     width: 100%;
-    max-height: 350px;
     object-fit: cover;
-    background-size: 648px cover;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .map__picture {
+    width: 1200px;
+    max-height: 350px;
+  }
+
   .map__photo {
-    background-size: 1200px cover;
+    width: 100%;
+    object-fit: cover;
   }
 }

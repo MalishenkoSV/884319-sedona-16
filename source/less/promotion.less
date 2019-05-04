@@ -8,7 +8,6 @@
 }
 
 .promotion__item {
-
   text-align: center;
   .font-bold();
   position: relative;
@@ -38,17 +37,20 @@
   padding: 30px 45px 31px 42px;
 }
 
-.promotion__sedona-photo {
+.promotion__picture {
+  height: 256px;
+}
+
+.promotion__photo {
   display: block;
-  height: 260px;
   width: 100%;
   text-align: center;
-  object-fit: cover;
 }
 
 @media (min-width: @tablet-width) {
   .promotion {
     display: flex;
+    max-height: 256px;
   }
 
   .promotion__two {
@@ -56,25 +58,30 @@
     flex-direction: row-reverse;
   }
 
-  .promotion__item--one {
-    background-image: none;
-  }
-
   .promotion__item {
-    width: 256px;
+    padding: 46px 47px 49px 47px;
+    width: 33.333%;
   }
 
   .promotion__picture {
-    max-width: 512px;
+    height: 256px;
+    width: 66.666%;
+  }
+
+  .promotion__photo {
+    width: 95%;
+    object-fit: cover;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .promotion__item {
-    width: 400px;
+  .promotion__picture {
+    height: 256px;
+    width: 66.666%;
   }
 
-  .promotion__picture {
-    width: 800px;
+  .promotion__photo {
+    width: 100%;
+    object-fit: cover;
   }
 }
