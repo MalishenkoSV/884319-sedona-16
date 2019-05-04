@@ -13,127 +13,128 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body>
-    <header class="page-header">
-      <nav class="main-nav">
-        <button type="button" class="main-nav__btn" aria-label="Закрытие окнa меню" ></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item" main-nav__item--active">
-            <a class="main-nav__link"  href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="photo.html">Фото и видео</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Форма отзыва</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="page-header__logo page-header__logo--big">
-        <h1 class="visually-hidden">Седона-сайт путешествий в Аризону</h1>
-        <a class="page-header__link"></a>
-      </div>
-    </header>
-    <main class="page-main">
-      <div class="container">
-        <div class="gallery__promotion">
-          <h2>Фото и видео</h2>
-          <p class="gallery__promotion-description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+    <div class="wrapper">
+      <header class="page-header">
+        <nav class="main-nav">
+          <button type="button" class="main-nav__btn" aria-label="Закрытие окнa меню" ></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item" main-nav__item--active">
+              <a class="main-nav__link"  href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photo.html">Фото и видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="page-header__logo page-header__logo--big">
+          <h1 class="visually-hidden">Седона-сайт путешествий в Аризону</h1>
+          <a class="page-header__link"></a>
         </div>
-        <section class="gallery">
-          <figure class="gallery__item gallery__item--sunset">
-            <picture>
-              <source  media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg,
-                           img/photo-sunset-desktop@2x.jpg">
-              <source  media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg,
-                           img/photo-sunset-tablet@2x.jpg">
-              <source  media="(max-width: 767px)" srcset="img/photo-sunset-mobile@1x.jpg,
-                           img/img/photo-sunset-mobile@2x.jpg">
-              <img src="img/photo-sunset-mobile@1x.jpg"  width="280" height="280" alt="Фото просторов Седоны">
-            </picture>
-            <figcaption class="gallery__item-title">Неродные просторы</figcaption>
-            <p class="gallery__promotion-description">Автор фото: Борис</p>
-            <span>1350</span>
-          </figure>
-          <figure class="gallery__item">
-            <picture>
-              <source  media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg,
-                       img/photo-cactus-desktop@2x.jpg">
-              <source  media="(min-width: 960px)" srcset="img/photo-cactus-tablet@1x.jpg,
-                       img/photo-cactus-tablet@2x.jpg">
-              <source  media="(max-width: 960px)" srcset="img/photo-cactus-mobile@1x.jpg,
-                       img/photo-cactus-mobile@2x.jpg">
-                <img src="img/photo-cactus-mobile@1x.jpg"  width="280" height="280" alt="Фото местной растительности">
-            </picture>
-            <figcaption class="gallery__item-title">Местная растительность</figcaption>
-            <p class="gallery__promotion-description">Автор фото: Cергей</p>
-            <span>143</span>
-          </figure>
-          <figure class="gallery__item">
-            <picture>
-              <source  media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg,
-                           img/photo-roads-desktop@2x.jpg">
-              <source  media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg,
-                           img/photo-roads-tablet@2x.jpg">
-              <source  media="(max-width: 767px)" srcset="img/photo-roads-mobile@1x.jpg,
-                           img/photo-roads-mobile@2x.jpg">
-                <img src="img/photo-roads-mobile@1x.jpg"  width="280" height="280" alt="Фото дороги на Север">
-            </picture>
-            <figcaption class="gallery__item-title">Дорога на север</figcaption>
-            <p class="gallery__promotion-description">Автор фото: Петр</p>
-            <span>96</span>
-          </figure>
-          <figure class="gallery__item">
-            <picture>
-              <source  media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg,
-                               img/photo-bridge-desktop@2x.jpg">
-              <source  media="(min-width: 768x)" srcset="img/photo-bridge-tablet@1x.jpg,
-                               img/photo-bridge-tablet@2x.jpg">
-              <source  media="(max-width: 767px)" srcset="img/photo-bridge-mobile@1x.jpg,
-                               img/photo-bridge-mobile@2x.jpg">
-              <img src="img/photo-bridge-mobile@1x.jpg"  width="280" height="280" alt="Фото моста Дьявола">
-            </picture>
-            <figcaption class="gallery__item-title">Мост дьявола</figcaption>
-            <p class="gallery__promotion-description">Автор фото: Антон</p>
-            <span>254</span>
-          </figure>
-        </section>
-        <section class="gallery__video">
-          <div class="gallery__video-block">
-            <h3>Все еще сомневаетесь?</h3>
-            <p class="gallery__video-description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      </header>
+      <main class="page-main">
+        <div class="container">
+          <div class="gallery__promotion">
+            <h2>Фото и видео</h2>
+            <p class="gallery__promotion-description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
           </div>
-          <picture>
-            <source  media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg,
-                               img/video-desktop@2x.jpg">
-            <source  media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg,
-                               img/video-tablet@2x.jpg">
-            <source  media="(max-width: 767px)" srcset="img/video-mobile@1x.jpg,
-                               img/video-mobile@2x.jpg">
-            <img src="img/video-mobile@1x.jpg" width="320" height="201" alt="Фото виде Седоны">
-          </picture>
-          <div class="gallery__range">
-            <div class="gallery__range-controls">
-              <div class="gallery__range-scale">
-                <div class="gallery__range-bar"></div>
-              </div>
-              <div class="gallery__range-toggle"></div>
+          <section class="gallery">
+            <figure class="gallery__item gallery__item--sunset">
+              <picture class="gallery__picture gallery__picture--sunset">
+                <source  media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg,
+                            img/photo-sunset-desktop@2x.jpg 2x">
+                <source  media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg,
+                            img/photo-sunset-tablet@2x.jpg 2x">
+                <source  media="(max-width: 767px)" srcset="img/photo-sunset-mobile@1x.jpg,
+                            img/img/photo-sunset-mobile@2x.jpg 2x">
+                <img class="gallery__photo gallery__photo--sunset" src="img/photo-sunset-mobile@1x.jpg"  width="280" height="280" alt="Фото просторов Седоны">
+              </picture>
+              <figcaption class="gallery__item-title">Неродные просторы</figcaption>
+              <p class="gallery__promotion-description">Автор фото: Борис</p>
+              <span>1350</span>
+            </figure>
+            <figure class="gallery__item">
+              <picture class="gallery__picture">
+                <source  media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg,
+                        img/photo-cactus-desktop@2x.jpg 2x">
+                <source  media="(min-width: 960px)" srcset="img/photo-cactus-tablet@1x.jpg,
+                        img/photo-cactus-tablet@2x.jpg 2x">
+                <source  media="(max-width: 960px)" srcset="img/photo-cactus-mobile@1x.jpg,
+                        img/photo-cactus-mobile@2x.jpg 2x">
+                  <img class="gallery__photo" src="img/photo-cactus-mobile@1x.jpg"  width="280" height="280" alt="Фото местной растительности">
+              </picture>
+              <figcaption class="gallery__item-title">Местная растительность</figcaption>
+              <p class="gallery__promotion-description">Автор фото: Cергей</p>
+              <span>143</span>
+            </figure>
+            <figure class="gallery__item">
+              <picture>
+                <source  media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg,
+                            img/photo-roads-desktop@2x.jpg 2x">
+                <source  media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg,
+                            img/photo-roads-tablet@2x.jpg 2x">
+                <source  media="(max-width: 767px)" srcset="img/photo-roads-mobile@1x.jpg,
+                            img/photo-roads-mobile@2x.jpg 2x">
+                  <img src="img/photo-roads-mobile@1x.jpg"  width="280" height="280" alt="Фото дороги на Север">
+              </picture>
+              <figcaption class="gallery__item-title">Дорога на север</figcaption>
+              <p class="gallery__promotion-description">Автор фото: Петр</p>
+              <span>96</span>
+            </figure>
+            <figure class="gallery__item">
+              <picture>
+                <source  media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg,
+                                img/photo-bridge-desktop@2x.jpg 2x">
+                <source  media="(min-width: 768x)" srcset="img/photo-bridge-tablet@1x.jpg,
+                                img/photo-bridge-tablet@2x.jpg 2x">
+                <source  media="(max-width: 767px)" srcset="img/photo-bridge-mobile@1x.jpg,
+                                img/photo-bridge-mobile@2x.jpg 2x">
+                <img src="img/photo-bridge-mobile@1x.jpg"  width="280" height="280" alt="Фото моста Дьявола">
+              </picture>
+              <figcaption class="gallery__item-title">Мост дьявола</figcaption>
+              <p class="gallery__promotion-description">Автор фото: Антон</p>
+              <span>254</span>
+            </figure>
+          </section>
+          <section class="gallery__video">
+            <div class="gallery__video-block">
+              <h3>Все еще сомневаетесь?</h3>
+              <p class="gallery__video-description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
             </div>
-          </div>
-          <div class="gallery__btns">
-            <button class="gallery__btn gallery__btn-one"></button>
-            <button class="gallery__btn-two"></button>
-            <button class="gallery__btn-three"></button>
-          </div>
-        </section>
-      </div>
-    </main>
-    <footer class="page-footer">
-      <div class="page-footer__visit-sedona">#visitSEDONA</div>
-      <div class="social">
-        <h5 class="visually-hidden">Социальные сети</h5>
+            <picture>
+              <source  media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg,
+                                img/video-desktop@2x.jpg, 2x">
+              <source  media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg,
+                                img/video-tablet@2x.jpg, 2x">
+              <source  media="(max-width: 767px)" srcset="img/video-mobile@1x.jpg,
+                                img/video-mobile@2x.jpg, 2x">
+              <img src="img/video-mobile@1x.jpg" width="320" height="201" alt="Фото виде Седоны">
+            </picture>
+            <div class="gallery__range">
+              <div class="gallery__range-controls">
+                <div class="gallery__range-scale">
+                  <div class="gallery__range-bar"></div>
+                </div>
+                <div class="gallery__range-toggle"></div>
+              </div>
+            </div>
+            <div class="gallery__btns">
+              <button class="gallery__btn gallery__btn-one"></button>
+              <button class="gallery__btn-two"></button>
+              <button class="gallery__btn-three"></button>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="page-footer">
+        <div class="page-footer__visit-sedona">#visitSEDONA</div>
+        <div class="social">
+          <h5 class="visually-hidden">Социальные сети</h5>
           <ul class="social__list">
             <li class="social__item social__item--tw">
               <a class="social__btn" href="#" aria-label="Наша страничка в Твиттере"></a>
@@ -145,15 +146,16 @@
               <a class="social-btn" href="#" aria-label="Наш канал на Ютуб"></a>
             </li>
           </ul>
-      </div>
-      <div class="page-footer__copyright">
-        <p>Разработано</p>
-        <a class="page-footer__copyright--html" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Логотип HTML-academy">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
-            <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
-          </svg>
-        </a>
-      </div>
-    </footer>
+        </div>
+        <div class="page-footer__copyright">
+          <p>Разработано</p>
+          <a class="page-footer__copyright--html" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Логотип HTML-academy">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+              <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
+            </svg>
+          </a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
