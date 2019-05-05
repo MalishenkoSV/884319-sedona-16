@@ -18,7 +18,7 @@
         <nav class="main-nav">
           <button type="button" class="main-nav__btn" aria-label="Закрытие окнa меню" ></button>
           <ul class="main-nav__list">
-            <li class="main-nav__item" main-nav__item--active">
+            <li class="main-nav__item main-nav__item--active">
               <a class="main-nav__link"  href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
@@ -38,7 +38,6 @@
         </div>
       </header>
       <main class="page-main">
-        <div class="container">
           <div class="gallery__promotion">
             <h2>Фото и видео</h2>
             <p class="gallery__promotion-description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
@@ -46,13 +45,9 @@
           <section class="gallery">
             <figure class="gallery__item gallery__item--sunset">
               <picture class="gallery__picture gallery__picture--sunset">
-                <source  media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg,
-                            img/photo-sunset-desktop@2x.jpg 2x">
-                <source  media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg,
-                            img/photo-sunset-tablet@2x.jpg 2x">
-                <source  media="(max-width: 767px)" srcset="img/photo-sunset-mobile@1x.jpg,
-                            img/img/photo-sunset-mobile@2x.jpg 2x">
-                <img class="gallery__photo gallery__photo--sunset" src="img/photo-sunset-mobile@1x.jpg"  width="280" height="280" alt="Фото просторов Седоны">
+                <source  media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                <source  media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                <img class="gallery__photo gallery__photo--sunset" src="img/photo-sunset-mobile@1x.jpg"  width="280" height="280" srcset="img/photo-sunset-mobile@1x.jpg 2x" alt="Фото просторов">
               </picture>
               <figcaption class="gallery__item-title">Неродные просторы</figcaption>
               <p class="gallery__promotion-description">Автор фото: Борис</p>
@@ -60,41 +55,35 @@
             </figure>
             <figure class="gallery__item">
               <picture class="gallery__picture">
-                <source  media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg,
+                <source  media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x,
                         img/photo-cactus-desktop@2x.jpg 2x">
-                <source  media="(min-width: 960px)" srcset="img/photo-cactus-tablet@1x.jpg,
+                <source  media="(min-width: 786px)" srcset="img/photo-cactus-tablet@1x.jpg 1x,
                         img/photo-cactus-tablet@2x.jpg 2x">
-                <source  media="(max-width: 960px)" srcset="img/photo-cactus-mobile@1x.jpg,
-                        img/photo-cactus-mobile@2x.jpg 2x">
-                  <img class="gallery__photo" src="img/photo-cactus-mobile@1x.jpg"  width="280" height="280" alt="Фото местной растительности">
+                  <img class="gallery__photo" src="img/photo-cactus-mobile@1x.jpg 1x"  width="280" height="280" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Фото местной растительности">
               </picture>
               <figcaption class="gallery__item-title">Местная растительность</figcaption>
               <p class="gallery__promotion-description">Автор фото: Cергей</p>
               <span>143</span>
             </figure>
             <figure class="gallery__item">
-              <picture>
-                <source  media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg,
+              <picture class="gallery__picture">
+                <source  media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x,
                             img/photo-roads-desktop@2x.jpg 2x">
-                <source  media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg,
+                <source  media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x,
                             img/photo-roads-tablet@2x.jpg 2x">
-                <source  media="(max-width: 767px)" srcset="img/photo-roads-mobile@1x.jpg,
-                            img/photo-roads-mobile@2x.jpg 2x">
-                  <img src="img/photo-roads-mobile@1x.jpg"  width="280" height="280" alt="Фото дороги на Север">
+                  <img class="gallery__photo" src="img/photo-roads-mobile@1x.jpg"  width="280" height="280" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Фото дороги на Север">
               </picture>
               <figcaption class="gallery__item-title">Дорога на север</figcaption>
               <p class="gallery__promotion-description">Автор фото: Петр</p>
               <span>96</span>
             </figure>
             <figure class="gallery__item">
-              <picture>
-                <source  media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg,
+              <picture class="gallery__picture">
+                <source  media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x,
                                 img/photo-bridge-desktop@2x.jpg 2x">
-                <source  media="(min-width: 768x)" srcset="img/photo-bridge-tablet@1x.jpg,
+                <source  media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x,
                                 img/photo-bridge-tablet@2x.jpg 2x">
-                <source  media="(max-width: 767px)" srcset="img/photo-bridge-mobile@1x.jpg,
-                                img/photo-bridge-mobile@2x.jpg 2x">
-                <img src="img/photo-bridge-mobile@1x.jpg"  width="280" height="280" alt="Фото моста Дьявола">
+                <img class="gallery__photo" src="img/photo-bridge-mobile@1x.jpg"  width="280" height="280" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Фото моста Дьявола">
               </picture>
               <figcaption class="gallery__item-title">Мост дьявола</figcaption>
               <p class="gallery__promotion-description">Автор фото: Антон</p>
@@ -107,13 +96,11 @@
               <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
             </div>
             <picture class="video__picture">
-              <source  media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg,
-                                img/video-desktop@2x.jpg, 2x">
-              <source  media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg,
-                                img/video-tablet@2x.jpg, 2x">
-              <source  media="(max-width: 767px)" srcset="img/video-mobile@1x.jpg,
-                                img/video-mobile@2x.jpg, 2x">
-              <img class="video__photo" src="img/video-mobile@1x.jpg" width="320" height="201" alt="Фото виде Седоны">
+              <source  media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x,
+                                img/video-desktop@2x.jpg 2x">
+              <source  media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x,
+                                img/video-tablet@2x.jpg 2x">
+              <img class="video__photo" src="img/video-mobile@1x.jpg" width="320" height="201" srcset="img/video-mobile@2x.jpg 2x" alt="Фото виде Седоны">
             </picture>
             <div class="video__range">
               <div class="video__range-controls">
@@ -129,7 +116,6 @@
               <button class="video__btn video__btn-three"></button>
             </div>
           </section>
-        </div>
       </main>
       <footer class="page-footer">
         <div class="page-footer__visit-sedona">#visitSEDONA</div>
