@@ -4,11 +4,13 @@
   padding-top: 33px;
   margin: auto;
   margin-top: 0;
+  margin-bottom: 33px;
 }
 
 .sedona-promotion__town {
   position: relative;
-  margin: 0 41px 33px;
+  padding: 0 41px 33px;
+  box-sizing: border-box;
   border-bottom: 1px solid @bg-grey;
 }
 
@@ -17,17 +19,18 @@
   .sedona-promotion {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 57px;
   }
 
   .sedona-promotion__town {
-    width: 33%;
+    width: 33.333%;
     border: none;
-    margin: 50px 55px 49px 56px;
+    padding: 50px 48px 49px 49px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .sedona-promotion__town {
-    margin: 50px 70px 70px 70px;
+    padding: 50px 58px 70px 57px;
   }
 }

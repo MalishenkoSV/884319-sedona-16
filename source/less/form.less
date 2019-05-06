@@ -1,13 +1,10 @@
-.form-wrapper {
-  margin: 0 60px;
-}
 
 .form {
   margin: 0 auto 47px;
 }
 
 .form__title {
-  .font-bold();
+  .font-bold;
   padding: 0;
   margin: 0;
   text-align: center;
@@ -30,6 +27,7 @@
 }
 
 .form__text {
+  width: 100%;
   height: 58px;
   background-color: @bg-lightgrey;
   border: none;
@@ -44,34 +42,16 @@
   color: @black;
 }
 
-.form__text--name {
-  width: 230px;
-}
-
-.form__text--surname {
-  width: 192px;
-}
-
-.form__text--middle {
-  width: 194px;
-}
 
 .form__label {
+  .font-main;
   color: @darkgrey;
   display: flex;
-}
-
-.form__text--tel {
-  width: 280px;
 }
 
 .form__text--tel::before {
   background-image: url("img/icon-phone.svg");
   background-color: @bg-darkgrey;
-}
-
-.form__text--mail {
-  width: 280px;
 }
 
 .form__radio-label {
@@ -89,6 +69,12 @@
   background-color: @bg-lightgrey;
   border: none;
   width: 100%;
+  border-bottom: none;
+}
+
+.form__group--textarea,
+.form__group--five {
+  border: none;
 }
 
 .form__description {
@@ -133,9 +119,18 @@
   }
 
   .form__group--four {
+    display: flex;
+    flex-wrap: wrap;
     order: 4;
-    flex-direction: row;
     width: 100%;
+  }
+
+  .form__group--four .form__checkbox-label {
+    width: 200px;
+  }
+
+  .form__group--four .form__title {
+    width: 278px;
   }
 
   .form__group--textarea {
@@ -148,7 +143,6 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: 66px;
-    margin-top: 58px;
     width: 100%;
   }
 
@@ -156,6 +150,7 @@
     display: block;
     .font-main;
     align-self: flex-end;
+    margin-top: 85px;
   }
 
   .form__group input::placeholder {
@@ -166,5 +161,22 @@
   .form__title {
     margin-bottom: 60px;
     text-align: center;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .form__group {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form__group--four,
+  .form__group--textarea {
+    width: 100%;
+  }
+
+  .form__group--four {
+    display: flex;
   }
 }

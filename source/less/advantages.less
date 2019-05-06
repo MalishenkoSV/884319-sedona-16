@@ -5,6 +5,7 @@
 .advantages__item {
   margin-bottom: 42px;
   text-align: start;
+  box-sizing: border-box;
 }
 
 .advantages__item--hosing::after {
@@ -19,24 +20,22 @@
 }
 
 .advantages__title {
-  .font-bold;
+  .font-super;
   margin-top: 35px;
 }
 
 @media (min-width: @tablet-width) {
-  .advantages {
-    max-height: 330px;
-  }
-
   .advantages__list {
     .reset-lists;
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 66px;
   }
 
   .advantages__item {
-    width: 256px;
+    width: 33.333%;
     padding: 164px 46px 0 50px;
+    box-sizing: border-box;
     text-align: center;
   }
 }
@@ -48,8 +47,6 @@
   }
 
   .advantages__item {
-    width: 400px;
-    box-sizing: border-box;
     padding: 164px 75px 0 67px;
   }
 }
