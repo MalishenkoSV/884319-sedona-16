@@ -2,32 +2,45 @@
   background-color: @lightgrey;
 }
 
-.promotion__title {
-  .font-bold();
-  margin-top: 35px;
-  padding-bottom: 0;
+.promotion h3 {
+  .font-super;
+  margin: 0;
 }
 
 .promotion__item {
-  .font-bold();
+  .font-main;
+  text-align: center;
+  padding: 45px 31px 42px 30px;
+  box-sizing: border-box;
   background-color: @bg-darkblue;
   color: @white;
 }
 
-.promotion__item--description {
-  padding: 0 27px 0 28px;
+.promotion__description {
+  padding: 0;
+  margin: 0;
+}
+
+.promotion__item span {
+  margin-bottom: 10px;
 }
 
 .promotion__item--one {
-  .font-main;
-  padding-top: 31px;
-  padding-bottom: 45px;
+  padding-top: 61px;
+  background-image: url("../img/bg-triangle.svg");
+  background-position: 50% -140px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.promotion__item--two {
-  padding: 45px 0 42px 0;
-  height: 104px;
-  margin-bottom: 45px;
+.promotion__picture {
+  height: 256px;
+}
+
+.promotion__photo {
+  display: block;
+  width: 100%;
+  text-align: center;
 }
 
 @media (min-width: @tablet-width) {
@@ -35,24 +48,29 @@
     display: flex;
   }
 
-  .promotion__item {
-    width: 256px;
-    height: 256px;
-  }
-
-  .promotion img {
-    width: 800px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .promotion {
-    display: flex;
+  .promotion__two {
     flex-direction: row-reverse;
   }
 
   .promotion__item {
-    width: 400px;
-    height: 256px;
+    padding: 46px 47px 47px 51px;
+    width: 33.333%;
+    background-image: none;
+  }
+
+  .promotion__picture {
+    width: 66.666%;
+    overflow: hidden;
+  }
+
+  .promotion__photo {
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promotion__item {
+    padding: 53px 67px 63px 68px;
   }
 }

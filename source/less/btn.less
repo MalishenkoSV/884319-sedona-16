@@ -2,40 +2,35 @@
   .font-super;
   background-color: @bg-darkblue;
   color: @white;
-  width: 280px;
-  height: 58px;
-  padding: 17px 47px 19px;
+  display: inline-block;
+  margin: 0;
+  padding: 17px 47px 19px 47px;
   text-decoration: none;
   border: none;
+  margin-bottom: 58px;
 }
 
 .btn__form {
-  margin: 0;
-  margin-bottom: 78px;
-}
-
-.main-nav__btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  height: 23px;
-  width: 22px;
+  margin: auto;
+  margin-top: 51px;
+  margin-bottom: 59px;
 }
 
 @media (min-width: @tablet-width) {
-  .main-nav__btn {
-    display: none;
+  .btn {
+    min-width: 458px;
+    box-sizing: border-box;
   }
 
-  .btn {
-    width: 458px;
-    height: 58px;
+  .btn__form {
+    width: 50%;
+    margin: 0;
+    order: 7;
   }
 }
 
 @media (min-width: @desktop-width) {
   .btn {
-    width: 458px;
-    height: 58px;
+    margin-bottom: 66px;
   }
 }

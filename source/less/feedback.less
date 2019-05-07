@@ -16,9 +16,28 @@
 }
 
 .feedback h2 {
-  .font-bolder();
+  .font-bolder;
 }
 
 .feedback-btn {
   position: absolute;
+}
+
+@media (min-width: @tablet-width) {
+  .feedback__sedona {
+    width: 439px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 71px;
+    border: none;
+    text-align: center;
+  }
+
+  .feedback__sedona h2 {
+    .font-superbold;
+  }
+
+  .feedback__sedona--description {
+    text-align: center;
+  }
 }

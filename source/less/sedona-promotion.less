@@ -1,27 +1,36 @@
-.sedona-promotion__town {
-  padding-bottom: 49px;
+
+.sedona-promotion {
+  background-color: @lightgrey;
+  padding-top: 33px;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 33px;
 }
+
+.sedona-promotion__town {
+  position: relative;
+  padding: 0 41px 33px;
+  box-sizing: border-box;
+  border-bottom: 1px solid @bg-grey;
+}
+
 
 @media (min-width: @tablet-width) {
   .sedona-promotion {
     display: flex;
     justify-content: space-between;
-    background-color: @lightgrey;
+    margin-bottom: 57px;
   }
 
   .sedona-promotion__town {
-    width: 256px;
-    height: 256px;
+    width: 33.333%;
+    border: none;
+    padding: 50px 48px 49px 49px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .promotion {
-    display: flex;
-  }
-
   .sedona-promotion__town {
-    width: 400px;
-    height: 256px;
+    padding: 50px 58px 70px 57px;
   }
 }

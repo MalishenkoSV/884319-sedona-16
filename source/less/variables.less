@@ -2,15 +2,25 @@
 @white: #ffffff;
 @black: #000000;
 @bg-grey: rgba(178, 178, 178, 0.3);
+@black-light: rgba(0, 0, 0, 0.3);
 @box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
 @darkgrey: #333333;
 @bg-darkblue: #81b3d2;
 @lightgrey: #d8d8d8;
 @bg-lightgrey: #f2f2f2;
+@bg-blackgrey: rgba(0, 1, 1, 0.2);
 @bg-darkgrey: #e6e6e6;
+@whitegrey: #eaeaea;
 @tablet-width: 768px;
 @desktop-width: 1200px;
 @beige: #f5f5dc;
+@retina-dpi: 144dpi;
+@retina-dppx: 1.5dppx;
+
+.reset() {
+  margin: 0;
+  padding: 0;
+}
 
 .reset-lists() {
   margin: 0;
@@ -50,6 +60,12 @@
 
 .font-super() {
   font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.font-superbold() {
+  font-size: 30px;
   font-weight: 700;
   line-height: 26px;
 }
