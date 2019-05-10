@@ -6,8 +6,8 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="fonts/ptsans.woff2" type="font/woff2" rel="preload" as="font">
     <link href="fonts/ptsansbold.woff2" type="font/woff2" rel="preload" as="font">
-    <link href="fonts/ptsansbold.woff" type="font/woff">
-    <link href="fonts/ptsans.woff" type="font/woff">
+    <!-- <link href="fonts/ptsansbold.woff" type="font/woff">
+    <link href="fonts/ptsans.woff" type="font/woff"> -->
     <meta name="format-detection" content="telephone=no">
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -45,35 +45,42 @@
         <h3 class="visually-hidden">Форма обратной связи:</h3>
         <form class="form" method="post" action="https://echo.htmlacademy.ru">
           <fieldset class="form__group form__group--one">
-              <legend class="form__title">Представьтесь:</legend>
-                <label class="form__label" for="name">Имя*:
-                  <input class="form__text form__text--name" type="text" id="name" name="user-name" placeholder="Петр">
-                </label>
-                <label class="form__label" for="surname">Фамилия*:
-                  <input class="form__text form__text--surname" type="text" id="surname" name="user-surname" placeholder="Иванов">
-                </label>
-                <label class="form__label" for="middle-name">Отчество:
-                  <input class="form__text form__text--middle" type="text" id="middle-name" name="patronymic-name" placeholder="Александрович">
-                </label>
+            <legend class="form__legend">Представьтесь:</legend>
+            <div class="form__container form__container--one">
+              <label class="form__label" for="name">Имя*:
+                <input class="form__text form__text--name" type="text" id="name" name="user-name" placeholder="Петр">
+              </label>
+              <label class="form__label" for="surname">Фамилия*:
+                <input class="form__text form__text--surname" type="text" id="surname" name="user-surname" placeholder="Иванов">
+              </label>
+              <label class="form__label" for="middle-name">Отчество:
+                <input class="form__text form__text--middle" type="text" id="middle-name" name="patronymic-name" placeholder="Александрович">
+              </label>
+            </div>
           </fieldset>
           <fieldset class="form__group form__group--two">
-              <legend class="form__title">Контактная информация:</legend>
-              <label class="form__label" for="tel">Контактный телефон*:</label>
+            <legend class="form__legend">Контактная информация:</legend>
+            <div class="form__container form__container--two">
+              <label class="form__label form__label--tel" for="tel">Контактный телефон*:</label>
               <input class="form__text form__text--tel" type="text" id="tel" name="tel-number" placeholder="Введите телефон">
-              <label class="form__label" for="mail">Электронная почта*:</label>
+              <label class="form__label form__label--mail" for="mail">Электронная почта*:</label>
               <input class="form__text form__text--mail" type="text" id="mail" name="e-mail" placeholder="Введите e-mail">
-          </fieldset>
+            </div>
+            </fieldset>
           <fieldset class="form__group form__group--three">
-              <legend class="form__title">Ваше общее впечатление:</legend>
+            <legend class="form__legend">Ваше общее впечатление:</legend>
+            <div class="form__container form__container--three">
               <input class="form__radio visually-hidden" type="radio" name="positive-location" id="positive" value="positive" checked>
               <label class="form__radio-label" for="positive">Скорее положительное</label>
               <input class="form__radio visually-hidden"  type="radio" name="negative-location" id="negative" value="negative">
               <label class="form__radio-label"  for="negative">Скорее отрицательное</label>
               <input class="form__radio visually-hidden" type="radio" name="difficult-answer" id="difficult" value="difficult">
               <label class="form__radio-label"  for="difficult">Затрудняюсь ответить</label>
+            </div>
           </fieldset>
           <fieldset class="form__group form__group--four">
-              <legend class="form__title">Посещенные достопримечательности:</legend>
+            <legend class="form__legend">Посещенные достопримечательности:</legend>
+            <div class="form__container form__container--four">
               <input class="form__checkbox visually-hidden" type="checkbox" name="bridge-devil" id="bridge" checked>
               <label class="form__checkbox-label" for="bridge">Мост Дьявола</label>
               <input class="form__checkbox visually-hidden" type="checkbox" name="mountain-bell" id="mountain" checked>
@@ -82,9 +89,10 @@
               <label class="form__checkbox-label"  for="park">Слайд-парк</label>
               <input class="form__checkbox visually-hidden" type="checkbox" name="red-rocks" id="rocks">
               <label class="form__checkbox-label" for="rocks">Красные скалы</label>
+            </div>
           </fieldset>
           <fieldset class="form__group form__group--textarea">
-              <legend class="form__title">Опишите свои эмоции:</legend>
+              <legend class="form__legend">Опишите свои эмоции:</legend>
               <textarea class="form__textarea" name="comment" id="comment-field" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <div class="form__group form__group--five">
