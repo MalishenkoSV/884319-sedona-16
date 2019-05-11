@@ -10,7 +10,7 @@
     <link href="fonts/ptsans.woff" type="font/woff"> -->
     <meta name="format-detection" content="telephone=no">
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=sedona-width,initial-scale=1">
   </head>
   <body>
     <header class="page-header">
@@ -47,15 +47,18 @@
           <fieldset class="form__group form__group--one">
             <legend class="form__legend">Представьтесь:</legend>
             <div class="form__container form__container--one">
-              <label class="form__label" for="name">Имя*:
+              <div class="form__container--input">
+                <label class="form__label" for="name">Имя*:</label>
                 <input class="form__text form__text--name" type="text" id="name" name="user-name" placeholder="Петр">
-              </label>
-              <label class="form__label" for="surname">Фамилия*:
+              </div>
+              <div class="form__container--input">
+                <label class="form__label" for="surname">Фамилия*:</label>
                 <input class="form__text form__text--surname" type="text" id="surname" name="user-surname" placeholder="Иванов">
-              </label>
-              <label class="form__label" for="middle-name">Отчество:
+              </div>
+              <div class="form__container--input">
+                <label class="form__label" for="middle-name">Отчество:</label>
                 <input class="form__text form__text--middle" type="text" id="middle-name" name="patronymic-name" placeholder="Александрович">
-              </label>
+              </div>
             </div>
           </fieldset>
           <fieldset class="form__group form__group--two">
