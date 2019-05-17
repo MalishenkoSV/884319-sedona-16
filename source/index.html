@@ -108,30 +108,30 @@
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--housing">
               <svg class="advantages__icon advantages__icon--housing"><use xlink:href="#housing-icon"></use></svg>
-              <div>
+              <div class="advantages__container">
                 <h5 class="advantages__title">Жилье</h5>
                 <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </div>
             </li>
-            <li class="advantages__item advantages__item--eat">
-              <svg class="advantages__icon advantages__icon--eat"><use xlink:href="#eat-icon"></use></svg>
-              <div>
-                <h5 class="advantages__title">Еда</h5>
-                <p class="advantages__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
-              </div>
-            </li>
             <li class="advantages__item advantages__item--souvenir">
               <svg class="advantages__icon advantages__icon--souvenir"><use xlink:href="#souvenir-icon"></use></svg>
-              <div>
+              <div class="advantages__container">
                 <h5 class="advantages__title">Сувениры</h5>
                 <p class="advantages__description">Не только китайского, но и местного производства!</p>
+              </div>
+            </li>
+            <li class="advantages__item advantages__item--eat">
+              <svg class="advantages__icon advantages__icon--eat"><use xlink:href="#eat-icon"></use></svg>
+              <div class="advantages__container">
+                <h5 class="advantages__title">Еда</h5>
+                <p class="advantages__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
               </div>
             </li>
           </ul>
         </section>
         <section class="promotion promotion__two">
           <div class="promotion__item promotion__item--two">
-            <h3>Там есть мост Дьявола</h3>
+            <h3 class="promotion__title">Там есть мост Дьявола</h3>
             <span>— №2 —</span>
             <p>Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
@@ -143,7 +143,7 @@
             <img class="promotion__photo" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Фото моста Дьявола">
           </picture>
         </section>
-        <div class="sedona-promotion">
+        <div class="sedona-promotion wrapper-sedona">
           <section class="sedona-promotion__town">
             <h3 class="sedona-promotion__title">Небольшая площадь</h3>
             <span>— №3 —</span>
@@ -165,7 +165,7 @@
             <h3 class="hotels__title">Заинтересовались?</h3>
             <p class="hotels__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
           </div>
-          <a href="#" class="btn">Найти гостинницу</a>
+          <a href="#" class="btn btn--hotels">Найти гостинницу</a>
         </section>
         <section class="map">
           <picture class="map__picture">
