@@ -1,8 +1,16 @@
 .main-nav {
   background-color: @bg-darkblue;
   position: relative;
-  height: 56px;
   margin-bottom: 56px;
+}
+
+.main-nav:hover {
+  background-color: @darkblue;
+}
+
+.main-nav:active {
+  background-color: @super-darkblue;
+  color: @white-opacity;
 }
 
 .main-nav__list {
@@ -33,7 +41,6 @@
 }
 
 .main-nav__btn::before {
-  position: absolute;
   top: 20px;
   right: 20px;
   height: 22px;
@@ -86,7 +93,6 @@
   }
 
   .main-nav__list {
-    .reset-lists;
     height: 56px;
     display: flex;
     flex-direction: row;

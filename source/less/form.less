@@ -48,6 +48,22 @@
   border: none;
 }
 
+.form__text:hover {
+  background-color: @grey-disabled;
+  outline: none;
+}
+
+.form__text:active {
+  background-color: @white;
+  outline: none;
+  box-shadow: 1px 1px 1px 1px inset @grey-disabled;
+}
+
+.form__text:active .form__label::before,
+.form__text:active .form__label::after {
+  display: none;
+}
+
 .form__group input::placeholder,
 .form__group--textarea::placeholder {
   .font-bold;
@@ -118,6 +134,7 @@
 
 .form__label--tel,
 .form__label--mail {
+  justify-content: flex-start;
   padding-left: 22px;
   position: relative;
 }
@@ -126,10 +143,10 @@
 .form__label--mail::before {
   content: "";
   position: absolute;
-  width: 60px;
-  height: 60px;
+  width: 62px;
+  height: 62px;
   background-color: @bg-darkgrey;
-  top: 35px;
+  top: 34px;
   right: 0;
   display: inline-block;
   z-index: 1;
@@ -151,7 +168,7 @@
 .form__checkbox:checked + .form__checkbox-label::after {
   content: "";
   position: absolute;
-  top: 0;
+  top: 2px;
   left: 18px;
   z-index: 10;
   width: 23px;
@@ -198,6 +215,16 @@
   display: inline-block;
   background-color: @darkgrey;
   border-radius: 50%;
+}
+
+.form__checkbox-label:hover::before,
+.form__radio-label:hover::before {
+  background-color: @grey-disabled;
+}
+
+.form__checkbox-label:active::before,
+.form__radio-label:hover::before {
+  background-color: @grey-active;
 }
 
 .form__label--tel::after {
@@ -251,7 +278,6 @@
   .form__group {
     display: block;
     box-sizing: border-box;
-    // border: none;
     margin: 0;
     margin-bottom: 25px;
   }
@@ -285,7 +311,7 @@
 
   .form__group--four::after,
   .form__group--textarea::after,
-  .form__container--two::after {
+  .form__group--two::after {
     content: "";
     position: absolute;
     top: 15px;
@@ -298,23 +324,17 @@
   .form__group--one {
     order: 2;
     margin-left: 58px;
-    margin-bottom: 22px;
+    margin-bottom: 60px;
   }
 
   .form__group--two {
     order: 3;
     width: 100%;
-    flex-direction: row;
     margin-bottom: 25px;
   }
 
   .form__group--two .form__text--tel {
     margin-bottom: 5px;
-  }
-
-  .form__text--tel,
-  .form__text--mail {
-    width: auto;
   }
 
   .form__group--three {
@@ -331,13 +351,16 @@
     left: 65px;
   }
 
+  .form__checkbox:checked + .form__checkbox-label::after {
+    top: 20px;
+  }
+
   .form__group--four {
     position: relative;
     order: 4;
     margin-bottom: 58px;
     width: 100%;
   }
-
 
   .form__container--four {
     flex-direction: row;
@@ -350,6 +373,11 @@
     padding-left: 135px;
     margin: 0;
     margin-bottom: 73px;
+  }
+
+  .form__checkbox-label::after {
+    top: 5px;
+    left: 0;
   }
 
   .form__container--four .form__checkbox-label {
@@ -444,13 +472,22 @@
   }
 
   .form__container--two {
+    width: 100%;
+    display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+
+  .form__container--input {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
   }
 
   .form__label--tel {
     width: auto;
     margin-top: 0;
+    display: block;
   }
 
   .form__label {
@@ -486,7 +523,7 @@
 
   .form__text--tel,
   .form__text--mail {
-    width: 257px;
+    width: 315px;
     padding-left: 0;
     margin: 0;
   }
@@ -497,13 +534,13 @@
 
   .form__label--tel::before,
   .form__label--mail::before {
-    top: -5px;
-    left: 350px;
+    top: 34px;
+    left: 250px;
   }
 
   .form__label::after {
-    top: 25px;
-    left: 375px;
+    top: 55px;
+    left: 270px;
   }
 
   .form__container--four .form__checkbox-label {
