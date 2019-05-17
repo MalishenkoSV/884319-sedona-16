@@ -15,9 +15,27 @@
   margin-bottom: 40px;
 }
 
+.page-footer__copyright-icon {
+  width: 27px;
+  height: 34px;
+}
+
+.page-footer__copyright-description {
+  .reset;
+  .font-main__bold;
+}
+
 .page-footer__copyright--html {
-  margin-top: 20px;
   margin-left: 10px;
+  fill: @black;
+}
+
+.page-footer__copyright--html:hover {
+  fill: @bg-darkblue;
+}
+
+.page-footer__copyright--html:active {
+  fill: @black-light;
 }
 
 @media (min-width: @tablet-width) {
@@ -30,5 +48,9 @@
 
   .page-footer__visit-sedona {
     display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    .reset;
   }
 }

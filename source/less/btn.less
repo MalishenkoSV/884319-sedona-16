@@ -1,27 +1,45 @@
 .btn {
   .font-super;
   background-color: @bg-darkblue;
+  text-transform: uppercase;
   color: @white;
   display: inline-block;
   margin: 0;
-  padding: 17px 47px 19px 47px;
+  padding: 21px 48px;
   text-decoration: none;
   border: none;
 }
 
+.btn--hotels {
+  .font-super;
+  padding: 15px 38px;
+}
+
+.btn:hover {
+  background-color: @darkblue;
+}
+
+.btn:active {
+  background-color: @super-darkblue;
+  color: @white-opacity;
+}
+
+.btn:disabled {
+  background-color: @grey-disabled;
+}
+
 .btn__form {
   margin: auto;
-  margin-top: 51px;
 }
 
 @media (min-width: @tablet-width) {
   .btn {
-    min-width: 458px;
+    width: 458px;
     box-sizing: border-box;
   }
 
   .btn__form {
     width: 50%;
-    margin: 0;
+    .reset;
   }
 }

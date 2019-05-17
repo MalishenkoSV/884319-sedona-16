@@ -4,14 +4,23 @@
 }
 
 .feedback__sedona {
-  padding: 0 21px 22px 23px;
-  margin-bottom: 25px;
-  border-bottom: 1px solid @bg-lightgrey;
+  margin-left: auto;
+  margin-right: auto;
+  width: 276px;
+  margin-bottom: 37px;
+}
+
+.feedback__sedona::before {
+  content: "";
+  background-color: @bg-lightgrey;
+}
+
+.feedback__sedona h2 {
+  margin-bottom: 20px;
 }
 
 .feedback__sedona--description {
-  padding: 0;
-  margin: 0;
+  .reset;
   color: @darkgrey;
 }
 
@@ -26,18 +35,25 @@
 @media (min-width: @tablet-width) {
   .feedback__sedona {
     width: 439px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 71px;
+    margin-bottom: 75px;
+    padding: 0;
     border: none;
     text-align: center;
   }
 
   .feedback__sedona h2 {
     .font-superbold;
+    margin: 0;
+    margin-bottom: 30px;
   }
 
   .feedback__sedona--description {
     text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback__sedona {
+    margin-bottom: 60px;
   }
 }

@@ -1,5 +1,19 @@
 .map {
   background-color: @beige;
+  position: relative;
+}
+
+.map::before {
+  contain: "";
+  position: absolute;
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  top: 50%;
+  left: 50%;
+  background-image: url("../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+  z-index: 10;
 }
 
 .map__picture {
@@ -27,6 +41,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .map {
+    margin-top: 66px;
+  }
+
   .map__picture {
     width: 1200px;
     max-height: 350px;
