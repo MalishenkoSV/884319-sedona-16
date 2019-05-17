@@ -77,10 +77,14 @@
           <fieldset class="form__group form__group--two">
             <legend class="form__legend">Контактная информация:</legend>
             <div class="form__container form__container--two">
-              <label class="form__label form__label--tel" for="tel"><span>Контактный</span>телефон*:</label>
+              <div class="form__container-input">
+              <label class="form__label form__label--tel" for="tel"><span>Контактный</span>&nbsp;телефон*:</label>
               <input class="form__text form__text--tel" type="text" id="tel" name="tel-number" placeholder="Введите телефон">
+              </div>
+              <div class="form__container-input">
               <label class="form__label form__label--mail" for="mail">Электронная почта*:</label>
               <input class="form__text form__text--mail" type="text" id="mail" name="e-mail" placeholder="Введите e-mail">
+              </div>
             </div>
             </fieldset>
           <fieldset class="form__group form__group--three">
@@ -98,7 +102,7 @@
             <legend class="form__legend">Посещенные достопримечательности:</legend>
             <div class="form__container form__container--four">
               <input class="form__checkbox visually-hidden" type="checkbox" name="bridge-devil" id="bridge" checked>
-              <label class="form__checkbox-label" for="bridge">Мост Дьявола</label>
+              <label class="form__checkbox-label" for="bridge" tabindex="0">Мост Дьявола</label>
               <input class="form__checkbox visually-hidden" type="checkbox" name="mountain-bell" id="mountain" checked>
               <label class="form__checkbox-label" for="mountain">Гора-Колокол</label>
               <input class="form__checkbox visually-hidden" type="checkbox" name="slide-park" id="park" checked>
