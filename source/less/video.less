@@ -8,7 +8,7 @@
   position: relative;
 }
 
-.video h4 {
+.video__title {
   .font-bold;
 }
 
@@ -30,103 +30,114 @@
   object-fit: cover;
 }
 
-.video__range {
+.video__container {
   position: relative;
-  width: 87%;
-  height: 45px;
-  margin-top: -50px;
+  width: auto;
   margin-left: auto;
   margin-right: auto;
+}
+
+.video__range {
+  position: absolute;
+  bottom: 74px;
+  left: 23px;
+  width: 88%;
+  height: 45px;
   background-color: @black-light;
 }
 
-.video__container {
-  width: 280px;
-  margin-left: auto;
-  margin-right: auto;
+.video__range-bar {
+  width: 73%;
+  position: absolute;
+  top: 5px;
+  left: 20px;
 }
 
-.video__range::before {
+.video__range-bar::before {
   content: "";
-  position: absolute;
-  width: 280px;
+  width: 100%;
   height: 2px;
   background-color: @white;
   opacity: 0.2;
-  top: 25px;
-  left: 89px;
   display: inline-block;
-  z-index: 5;
+  z-index: 55;
 }
 
 .video__btns {
   display: flex;
   justify-content: space-between;
   position: relative;
-  width: 87%;
+  bottom: 8px;
+  left: 23px;
+  width: 88%;
   min-height: 66px;
   background-color: @lightgrey;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .video__btn {
   position: absolute;
-  top: 10px;
+  top: 22px;
   border: none;
   opacity: 1;
-}
-
-.video__btn::before {
-  content: "";
-  position: absolute;
-  height: 20px;
-  top: 0;
-  display: inline-block;
-  z-index: 5;
+  background-color: transparent;
 }
 
 .video__btn--one {
-  width: 16px;
-  height: 20px;
   left: 25px;
-  margin-left: 20px;
 }
 
-.video__btn--one::before {
-  width: 16px;
+.video__btn svg {
   height: 20px;
-  left: 0;
-  background-image: url("../img/icon-video-replay.svg");
-  background-repeat: no-repeat;
+  fill: @grey-media;
 }
 
-.video__btn-container {
+.video__btn:hover svg {
+  fill: @darkgrey;
+}
+
+.video__btn:active svg {
+  fill: @darkgrey;
+  opacity: 0.3;
+}
+
+.video__replay {
+  width: 16px;
+}
+
+.video__subtitles {
+  width: 32px;
+}
+
+.video__fullscreen {
+  width: 20px;
+}
+
+.video__btns-container {
   position: absolute;
+  width: auto;
   right: 25px;
-  top: 10px;
-  margin-left: 20px;
+  top: 20px;
   display: flex;
-  width: 100px;
   justify-content: space-between;
   align-self: center;
-  margin-right: 23px;
 }
 
 .video__btn--two {
   width: 32px;
   height: 20px;
+  right: 94px;
 }
 
 .video__btn--three {
   width: 20px;
   height: 20px;
+  right: 23px;
 }
 
 .video__btn--two::before {
   width: 32px;
   height: 20px;
-  right: 94px;
+  display: inline-block;
   background-image: url("../img/icon-video-subtitles.svg");
   background-repeat: no-repeat;
 }
@@ -134,24 +145,24 @@
 .video__btn--three::before {
   width: 20px;
   height: 20px;
-  right: 23px;
+  display: inline-block;
   background-image: url("../img/icon-video-fullscreen.svg");
   background-repeat: no-repeat;
 }
 
-.video__range--toggle {
+.video__range-toggle {
+  position: absolute;
+  top: 10px;
+  left: 78px;
   height: 17px;
   width: 18px;
 }
 
-.video__range-bar::before {
+.video__range-toggle::before {
   content: "";
-  position: absolute;
   width: 11px;
   height: 10px;
   background-color: @white;
-  top: 20px;
-  left: 35px;
   border-radius: 50%;
   display: inline-block;
   z-index: 5;
@@ -173,25 +184,23 @@
   }
 
   .video__btns {
-    visibility: hidden;
+    width: 84%;
+    height: 93px;
+    bottom: 13px;
+    left: 60px;
+    background-color: transparent;
   }
 
-  .video__block h4 {
+  .video__btns:hover {
+    opacity: 0.6;
+  }
+
+  .video__title {
     .font-superbold;
   }
 
-  .video__picture {
-    width: 100%;
-  }
-
-  .video__photo {
-    width: auto;
-    height: auto;
-    object-fit: cover;
-  }
-
   .video__range {
-    width: 80%;
+    width: 84%;
     height: 93px;
     bottom: 33px;
     left: 60px;
@@ -217,13 +226,16 @@
     position: relative;
   }
 
-  .video__btn {
-    visibility: visible;
+  .video__btn svg {
+    fill: @white;
   }
 
-  .video__btn--one::before {
-    position: absolute;
-    bottom: 50px;
+  .video__btn:hover svg {
+    opacity: 0.6;
+  }
+
+  .video__btn:active svg {
+    opacity: 0.3;
   }
 }
 
@@ -244,7 +256,14 @@
   }
 
   .video__range {
-    width: 67%;
+    bottom: 73px;
+    left: 200px;
+    width: 66.77%;
     height: 97px;
+  }
+
+  .video__range-toggle {
+    bottom: 42px;
+    left: 150px;
   }
 }

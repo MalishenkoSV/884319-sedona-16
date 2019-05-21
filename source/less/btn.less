@@ -28,8 +28,26 @@
   background-color: @grey-disabled;
 }
 
+.btn--modal {
+  .font-bold;
+  padding: 18px 65px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: block;
+}
+
+.btn__error {
+  .font-bold;
+  width: 272px;
+  padding: 16px 117px;
+  box-sizing: border-box;
+  margin: 0 70px;
+}
+
 .btn__form {
+  .font-super;
   margin: auto;
+  padding: 15px 48px 15px 47px;
 }
 
 @media (min-width: @tablet-width) {
@@ -38,8 +56,20 @@
     box-sizing: border-box;
   }
 
+  .btn--modal {
+    .font-super;
+  }
+
   .btn__form {
     width: 50%;
     .reset;
+  }
+
+  .btn__error {
+    .font-super;
+    width: 272px;
+    padding: 11px 112px;
+    box-sizing: border-box;
+    margin: 0 auto;
   }
 }
