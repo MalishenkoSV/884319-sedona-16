@@ -6,7 +6,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="fonts/ptsans.woff2" type="font/woff2" rel="preload" as="font">
     <link href="fonts/ptsansbold.woff2" type="font/woff2" rel="preload" as="font">
-    <link href="fonts/ptsansbold.woff" type="font/woff">
+    <link href="fonts/ptsansbold.woff" type="font/woff" rel="preload" as="font">
     <link href="fonts/ptsans.woff" type="font/woff">
     <meta name="format-detection" content="telephone=no">
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
@@ -59,8 +59,9 @@
     </svg>
     <div class="wrapper">
       <header class="page-header">
-        <nav class="main-nav">
-          <button type="button" class="main-nav__btn" aria-label="Закрытие окнa меню" ></button>
+        <nav class="main-nav  main-nav--nojs">
+          <button type="button" class="main-nav__toggle" aria-label="Закрытие окнa меню"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
               <a class="main-nav__link"  href="index.html">Главная</a>
@@ -75,11 +76,11 @@
               <a class="main-nav__link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
             </li>
           </ul>
+          </div>
         </nav>
         <div class="page-header__logo page-header__logo--index">
           <h1 class="visually-hidden">Седона-сайт путешествий в Аризону</h1>
-          <a class="page-header__link">
-          </a>
+          <a class="page-header__link">Седона</a>
         </div>
       </header>
       <main class="page-main">
@@ -165,7 +166,7 @@
             <h3 class="hotels__title">Заинтересовались?</h3>
             <p class="hotels__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
           </div>
-          <a href="#" class="btn btn--hotels">Найти гостинницу</a>
+          <a href="hotel.html" class="btn btn--hotels">Найти гостинницу</a>
         </section>
         <section class="map">
           <picture class="map__picture">
@@ -175,6 +176,7 @@
                                 img/bg-map-tablet@2x.jpg 2x">
           <img class="map__photo" src="img/bg-map-mobile@1x.jpg"  width="320" height="350" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Фото карты">
           </picture>
+          <img class="map__marker" src="img/icon-map-marker.svg" width="27" height="27" alt="Маркер карты">
         </section>
       </main>
       <footer class="page-footer">
@@ -182,22 +184,22 @@
       <div class="social">
         <h5 class="visually-hidden">Социальные сети</h5>
         <ul class="social__list">
-        <li class="social__item social__item--tw">
-          <a class="social__btn" href="#" aria-label="Наша страничка в Твиттере">
-            <svg class="social__icon social__icon--tw"><use xlink:href="#tw-icon"></use></svg>
-          </a>
-        </li>
-        <li class="social__item social__item--fb">
-          <a class="social__btn social__btn--fb"  aria-label="Наша страничка в Фейсбук">
-            <svg class="social__icon social__icon--fb"><use xlink:href="#fb-icon"></use></svg>
-          </a>
-        </li>
-        <li class="social__item social__item--yt">
-          <a class="social__btn" href="#" aria-label="Наш канал на Ютуб">
-            <svg class="social__icon social__icon--yt"><use xlink:href="#yt-icon"></use></svg>
-          </a>
-        </li>
-        </ul>
+            <li class="social__item social__item--tw">
+              <a class="social__btn" href="#" aria-label="Наша страничка в Твиттере">
+                <svg class="social__icon social__icon--tw"><use xlink:href="#tw-icon"></use></svg>
+              </a>
+            </li>
+            <li class="social__item social__item--fb">
+            <a class="social__btn social__btn--fb"  aria-label="Наша страничка в Фейсбук">
+              <svg class="social__icon social__icon--fb"><use xlink:href="#fb-icon"></use></svg>
+             </a>
+            </li>
+            <li class="social__item social__item--yt">
+              <a class="social__btn" href="#" aria-label="Наш канал на Ютуб">
+                <svg class="social__icon social__icon--yt"><use xlink:href="#yt-icon"></use></svg>
+              </a>
+            </li>
+          </ul>
       </div>
       <div class="page-footer__copyright">
         <p class="page-footer__copyright-description">Разработано</p>
@@ -207,5 +209,6 @@
       </div>
       </footer>
     </div>
+    <script src="js/main.js"></script>
   </body>
 </html>

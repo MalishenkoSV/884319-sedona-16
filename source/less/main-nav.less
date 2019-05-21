@@ -4,13 +4,29 @@
   margin-bottom: 56px;
 }
 
-.main-nav:hover {
-  background-color: @darkblue;
+.main-nav__item {
+  height: 34px;
+  box-shadow: @box-shadow;
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid rgba(1, 1, 1, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: @bg-darkblue;
+
+  &:hover {
+    background-color: @darkblue;
+    color: @white;
+  }
+
+  &:active {
+    background-color: @super-darkblue;
+    color: @white;
+  }
 }
 
-.main-nav:active {
-  background-color: @super-darkblue;
+.main-nav__item:active .main-nav__link {
   color: @white-opacity;
+  background-color: @super-darkblue;
 }
 
 .main-nav__list {
@@ -23,37 +39,93 @@
   text-decoration: none;
 }
 
-.main-nav__item {
-  height: 34px;
-  box-shadow: @box-shadow;
-  text-align: center;
-  padding: 10px;
-  border-top: 1px solid rgba(1, 1, 1, 0.2);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.main-nav__btn {
+.main-nav__toggle {
   position: absolute;
   top: 20px;
   right: 20px;
   height: 23px;
   width: 22px;
+  z-index: 2;
 }
 
-.main-nav__btn::before {
-  top: 20px;
-  right: 20px;
-  height: 22px;
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 45px;
+  right: 0;
   width: 22px;
-  object-fit: contain;
-  display: inline-block;
-  background-image: url("../img/icon-cross.svg");
+  height: 3px;
+  background-color: @bg-darkblue;
+  box-shadow: 0 8px 0 0 @bg-darkblue, 0 16px 0 0 @bg-darkblue;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    right: 22px;
+    width: 23px;
+    height: 3px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav--closed .main-nav__item {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.main-nav__wrapper {
+  .main-nav--opened .main-nav__wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+    min-height: 0;
+  }
+
+  .main-nav--nojs .main-nav__item {
+    display: block;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .main-nav {
     background-color: @white;
     .reset;
+  }
+
+  .main-nav--closed .main-nav__item {
+    display: block;
+  }
+
+  .main-nav__toggle {
+    display: none;
   }
 
   .main-nav__list {
@@ -66,6 +138,8 @@
   }
 
   .main-nav__item {
+    background-color: @white;
+    color: @black;
     width: 153px;
     border: none;
     box-shadow: none;

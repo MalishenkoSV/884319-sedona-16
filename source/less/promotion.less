@@ -10,7 +10,7 @@
 }
 
 .promotion__item {
-  .font-main;
+  .font-main__regular;
   text-align: center;
   padding: 10px 31px 12px 30px;
   box-sizing: border-box;
@@ -19,8 +19,7 @@
 }
 
 .promotion__description {
-  padding: 0;
-  margin: 0;
+  .reset;
 }
 
 .promotion__item span {
@@ -51,12 +50,17 @@
     display: flex;
   }
 
+  .promotion__title {
+    .font-super;
+    margin-top: 41px;
+  }
+
   .promotion__two {
     flex-direction: row-reverse;
   }
 
   .promotion__item {
-    padding: 46px 47px 47px 51px;
+    padding: 6px 47px 7px 41px;
     width: 33.333%;
     background-image: none;
   }
@@ -74,6 +78,10 @@
 
 @media (min-width: @desktop-width) {
   .promotion__item {
-    padding: 53px 67px 63px 68px;
+    padding: 13px 67px 35px 68px;
+  }
+
+  .promotion__title {
+    padding: 0 40px;
   }
 }
