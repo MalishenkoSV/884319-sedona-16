@@ -11,21 +11,23 @@
 
 .page-footer__copyright {
   display: flex;
-  justify-content: center;
   margin-bottom: 40px;
 }
 
 .page-footer__copyright-icon {
   width: 67px;
-  height: 34px;
+  height: 40px;
 }
 
 .page-footer__copyright-description {
   .reset;
   .font-main__regular;
+  align-self: center;
+  display: flex;
 }
 
 .page-footer__copyright--html {
+  display: flex;
   margin-left: 10px;
   fill: @black;
 }
@@ -53,7 +55,7 @@
 
 @media (min-width: @desktop-width) {
   .page-footer {
-    padding: 40px 120px 0 120px;
+    padding: 40px 100px 0 120px;
   }
 
   .page-footer__visit-sedona {
@@ -64,7 +66,15 @@
     padding-top: 10px;
   }
 
+  .page-footer__copyright--html {
+    margin: 0;
+  }
+
   .social__list {
-    padding-left: 20px;
+    padding-left: 80px;
+  }
+
+  .social__item {
+    margin-right: 5px;
   }
 }

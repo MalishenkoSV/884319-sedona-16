@@ -4,6 +4,10 @@
   position: relative;
 }
 
+.form__error {
+
+}
+
 .form__legend {
   .font-bold;
   margin: 0;
@@ -81,8 +85,6 @@
 .form__label--mail {
   .font-main__bold;
   padding-right: 16px;
-  display: flex;
-  justify-content: space-between;
   text-align: center;
   color: @darkgrey;
   width: auto;
@@ -143,7 +145,6 @@
   .font-media__regular;
   position: relative;
   display: flex;
-  justify-content: space-between;
   padding-bottom: 22px;
 }
 
@@ -154,7 +155,7 @@
   width: 58px;
   height: 58px;
   background-color: @bg-darkgrey;
-  top: 36px;
+  top: 56px;
   right: 0;
   display: inline-block;
   z-index: 1;
@@ -166,8 +167,8 @@
   position: absolute;
   display: inline-block;
   background-repeat: no-repeat;
-  top: 56px;
-  right: 0;
+  top: 76px;
+  right: 18px;
   z-index: 10;
 }
 
@@ -329,6 +330,10 @@
     background-color: #323232;
   }
 
+  .form__container--one .form__label {
+    align-items: center;
+  }
+
   .form__group--one {
     order: 2;
     margin-left: 48px;
@@ -438,7 +443,8 @@
   }
 
   .form__group--one .form__legend {
-    margin-bottom: 40px;
+    margin-bottom: 55px;
+    padding-right: 40px;
   }
 
   .form__group--two .form__legend {
@@ -450,7 +456,7 @@
     width: 278px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 45px;
+    margin-bottom: 55px;
   }
 }
 
@@ -459,7 +465,7 @@
     width: 100%;
     margin: 0;
     margin-bottom: 65px;
-    align-content: space-between;
+    justify-content: cener;
   }
 
   .form__group {
@@ -486,16 +492,20 @@
 
   .form__container--two {
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .form__container--four {
     width: 100%;
   }
 
+  .form__wrapper {
+    width: 25%;
+  }
+
   .form__container-input {
     width: 45%;
     display: flex;
-    justify-content: space-between;
   }
 
   .form__label--mail,
@@ -503,6 +513,10 @@
     .font-main__regular;
     display: block;
     position: relative;
+  }
+
+  .form__text {
+    width: 315px;
   }
 
   .form__text::placeholder {
@@ -521,7 +535,7 @@
   }
 
   .form__group--one {
-    padding-left: 69px;
+    padding-left: 89px;
   }
 
   .form__group--two .form__legend {
@@ -535,7 +549,7 @@
   }
 
   .form__group--four {
-    margin-bottom: 20px;
+    margin-bottom: 85px;
   }
 
   .form__group--four .form__checkbox-label {
