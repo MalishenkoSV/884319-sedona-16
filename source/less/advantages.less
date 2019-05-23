@@ -79,11 +79,13 @@
   }
 
   .advantages__item {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 33.333%;
-    padding: 60px 45px 0 45px;
+    padding: 60px 40px 0 40px;
     box-sizing: border-box;
-    text-align: center;
+    justify-content: center;
   }
 
   .advantages__title {
@@ -109,22 +111,21 @@
     order: 3;
   }
 
-  .advantages__icon--souvenir {
-    width: 77px;
-    height: 68px;
-  }
-
   .advantages__icon {
     padding: 0 31px;
   }
 
   .advantages__icon--housing {
-    order: 1;
     width: 75px;
     height: 72px;
   }
 
   .advantages__icon--eat {
+    width: 77px;
+    height: 68px;
+  }
+
+  .advantages__icon--souvenir {
     width: 64px;
     height: 75px;
   }
