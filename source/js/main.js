@@ -29,15 +29,15 @@ formBtn.addEventListener('click', function() {
     modalBlock.classList.remove('modal__closed');
   });
 
-  formText.addEventListener('error', function() {
-    modalBlock.classList.add('modal__closed');
-  });
+  // formText.addEventListener('error', function() {
+  //   modalBlock.classList.add('modal__closed');
+  // });
 
   errorBtn.addEventListener('click', function() {
     modalError.classList.remove('modal__closed');
   });
 
-  window.addEventListener("keydown", function (evt) {
+  window.addEventListener('keydown', function (evt) {
     if (evt.keyCode === 27) {
       navMain.classList.remove('main-nav--closed');
       modalBlock.classList.remove('modal__closed');
