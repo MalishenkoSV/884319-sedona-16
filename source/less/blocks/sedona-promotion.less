@@ -1,0 +1,61 @@
+
+.sedona-promotion {
+  background-color: @lightgrey;
+  padding-top: 5px;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.sedona-promotion__town {
+  position: relative;
+  padding: 0 21px 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid @bg-grey;
+}
+
+.sedona-promotion__town:nth-child(3) {
+  border-bottom: none;
+}
+
+.sedona-promotion__title {
+  .font-bold;
+  margin-bottom: 5px;
+}
+
+@media (min-width: @tablet-width) {
+  .sedona-promotion {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 57px;
+  }
+
+  .sedona-promotion__town {
+    width: 33.333%;
+    border: none;
+    padding: 40px 38px 20px 55px;
+    text-align: center;
+  }
+
+  .sedona-promotion__title {
+    .font-super;
+    text-align: center;
+    box-sizing: border-box;
+    .reset;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .sedona-promotion {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .sedona-promotion__town {
+    padding: 0 40px;
+  }
+
+  .sedona-promotion__title {
+    padding: 0 90px 10px;
+  }
+}

@@ -1,0 +1,301 @@
+.video__description {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video {
+  margin-bottom: 49px;
+  position: relative;
+}
+
+.video__title {
+  .font-bold;
+}
+
+.video__block {
+  width: 236px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 78px;
+}
+
+.video__picture {
+  width: 100%;
+  margin: 0;
+}
+
+.video__photo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.video__container {
+  position: relative;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video__range {
+  position: absolute;
+  bottom: 74px;
+  left: 23px;
+  width: 88%;
+  height: 45px;
+  background-color: @black-light;
+}
+
+.video__range-bar {
+  width: 73%;
+  position: absolute;
+  top: 5px;
+  left: 20px;
+}
+
+.video__range-bar::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: @white;
+  opacity: 0.2;
+  display: inline-block;
+  z-index: 55;
+}
+
+.video__btns {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 8px;
+  left: 23px;
+  width: 88%;
+  min-height: 66px;
+  background-color: @lightgrey;
+}
+
+.video__btn {
+  position: absolute;
+  top: 22px;
+  border: none;
+  opacity: 1;
+  background-color: transparent;
+}
+
+.video__btn--one {
+  left: 25px;
+}
+
+.video__btn svg {
+  height: 20px;
+  fill: @grey-media;
+}
+
+.video__btn:hover svg {
+  fill: @darkgrey;
+}
+
+.video__btn:active svg {
+  fill: @darkgrey;
+  opacity: 0.3;
+}
+
+.video__replay {
+  width: 16px;
+}
+
+.video__subtitles {
+  width: 32px;
+}
+
+.video__fullscreen {
+  width: 20px;
+}
+
+.video__btns-container {
+  position: absolute;
+  width: auto;
+  right: 6%;
+  top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.video__btn--two {
+  width: 32px;
+  height: 20px;
+  right: 94px;
+}
+
+.video__btn--three {
+  width: 20px;
+  height: 20px;
+  right: 23px;
+}
+
+.video__btn--two svg {
+  width: 32px;
+  height: 20px;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+.video__btn--three svg {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+.video__range-toggle {
+  position: absolute;
+  top: 10px;
+  left: 78px;
+  height: 17px;
+  width: 18px;
+}
+
+.video__range-toggle::before {
+  content: "";
+  width: 11px;
+  height: 10px;
+  background-color: @white;
+  border-radius: 50%;
+  display: inline-block;
+  z-index: 5;
+}
+
+@media (min-width: @tablet-width) {
+  .video {
+    min-width: 768px;
+    margin: 0;
+    margin-top: 68px;
+  }
+
+  .video__block {
+    width: 415px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 38px;
+  }
+
+  .video__btns {
+    width: 100%;
+    height: 93px;
+    bottom: 93px;
+    left: 0;
+    z-index: 200;
+    background-color: transparent;
+  }
+
+  .video__btns:hover {
+    opacity: 0.6;
+  }
+
+  .video__title {
+    .font-superbold;
+  }
+
+  .video__range {
+    width: 100%;
+    height: 93px;
+    bottom: 100px;
+    left: 0;
+  }
+
+  .video__range-bar {
+    width: 60%;
+    top: 35px;
+    left: 14%;
+    z-index: 100;
+  }
+
+  .video__range-toggle {
+    top: 40px;
+    left: 32%;
+    z-index: 111;
+  }
+
+  .video__range-bar::before {
+    top: 41px;
+    left: 32%;
+  }
+
+  .video__range::before {
+    width: 51%;
+    height: 3px;
+    background-color: @white;
+    opacity: 0.2;
+    top: 45px;
+    left: 93px;
+    display: inline-block;
+    z-index: 5;
+  }
+
+  .video__container {
+    position: relative;
+  }
+
+  .video__btn svg {
+    fill: @white;
+  }
+
+  .video__btn:hover svg {
+    opacity: 0.6;
+  }
+
+  .video__btn:active svg {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video {
+    width: 1200px;
+    margin-bottom: -20px;
+  }
+
+  .video__block {
+    margin-bottom: 68px;
+  }
+
+  .video__picture {
+    width: 800px;
+    height: 500px;
+    margin: 0;
+    margin-top: 68px;
+  }
+
+  .video__container {
+    margin-left: 199px;
+    margin-right: 201px;
+  }
+
+  .video__title {
+    margin-bottom: 30px;
+  }
+
+  .video__range-bar {
+    top: 28px;
+    left: 12%;
+  }
+
+  .video__range-toggle {
+    top: 33px;
+    left: 25%;
+  }
+
+  .video__btn {
+    top: 28px;
+  }
+
+  .video__btn--two {
+    right: 103px;
+  }
+
+  .video__btn--three {
+    right: 53px;
+  }
+}

@@ -1,0 +1,73 @@
+.btn {
+  .font-super;
+  background-color: @bg-darkblue;
+  text-transform: uppercase;
+  color: @white;
+  display: inline-block;
+  margin: 0;
+  padding: 21px 48px;
+  text-decoration: none;
+  border: none;
+}
+
+.btn--hotels {
+  .font-super;
+  padding: 15px 38px;
+}
+
+.btn:hover {
+  background-color: @darkblue;
+}
+
+.btn:active {
+  background-color: @super-darkblue;
+  color: @white-opacity;
+}
+
+.btn:disabled {
+  background-color: @grey-disabled;
+}
+
+.btn--modal {
+  .font-bold;
+  padding: 18px 65px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: block;
+}
+
+.btn--error {
+  padding: 18px 45px;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.btn__form {
+  .font-super;
+  margin: auto;
+  padding: 15px 48px 15px 47px;
+}
+
+@media (min-width: @tablet-width) {
+  .btn {
+    width: 458px;
+    box-sizing: border-box;
+  }
+
+  .btn--modal {
+    .font-super;
+  }
+
+  .btn__form {
+    width: 50%;
+    margin: 0;
+  }
+
+  .btn__error {
+    .font-super;
+    width: 80%;
+    padding: 11px 111px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+}
