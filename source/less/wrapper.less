@@ -7,18 +7,16 @@
 }
 
 @media (min-width: @tablet-width) {
+  .wrapper {
+    margin: 0;
+  }
+
   .wrapper-form {
     margin: 0 60px;
   }
 
   .wrapper-gallery {
     margin: 0 60px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .wrapper-form {
-    margin: 0 120px;
   }
 }
 
@@ -32,11 +30,16 @@
     background-color: @white;
   }
 
+  .wrapper-form {
+    margin: 110px 120px 0;
+  }
+
   .wrapper-sedona {
     padding: 45px 0 0;
   }
 
   .wrapper-gallery {
     margin: 0;
+    margin-top: 70px;
   }
 }
