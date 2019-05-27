@@ -15,7 +15,7 @@
       <include src="build/img/sprite.svg"></include>
     </div>
     <div class="wrapper">
-      <header class="page-header">
+      <header class="page-header page-header--form">
             <nav class="main-nav  main-nav--nojs">
               <button type="button" class="main-nav__toggle" aria-label="Закрытие окнa меню"><span class="visually-hidden">Открыть меню</span></button>
               <div class="main-nav__wrapper">
@@ -66,12 +66,12 @@
               <h4 class="form__title">Контактная информация:</h4>
               <div class="form__container form__container--two">
                 <div class="form__container-input">
-                  <label class="form__label form__label--tel" for="tel"><span>Контактный</span> телефон*:
+                  <label class="form__label form__label--tel" for="tel"><span class="form__label-ct"><span class="form__label-contact">Контактный</span><span class="form__label-phone"> телефон*:</span></span>
                     <input class="form__text form__text--tel" type="tel" id="tel" name="tel-number" placeholder="Введите телефон" required>
                   </label>
                 </div>
                 <div class="form__container-input">
-                  <label class="form__label form__label--mail" for="mail">Электронная почта*:
+                  <label class="form__label form__label--mail" for="mail"><span class="form__label-ct">Электронная почта*:</span>
                     <input class="form__text form__text--mail" type="email" id="mail" name="e-mail" placeholder="Введите e-mail" required>
                   </label>
                 </div>

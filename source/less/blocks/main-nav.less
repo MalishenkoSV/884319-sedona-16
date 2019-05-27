@@ -59,6 +59,8 @@
   height: 23px;
   width: 22px;
   z-index: 2;
+  border: none;
+  background-color: transparent;
 }
 
 .main-nav--closed .main-nav__toggle::before {
@@ -73,15 +75,15 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: 0;
-  right: 0;
+  top: 24px;
+  right: 20px;
 
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 24px;
-    right: 18px;
+    top: 0;
+    right: 0;
     width: 28px;
     height: 4px;
     background-color: #ffffff;
