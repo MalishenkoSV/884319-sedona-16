@@ -144,14 +144,15 @@
           <a href="img/bg-map-desktop@1x.jpg">
             <picture class="map__picture">
               <source media="(min-width: 960px)" type="image/webp" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
-              <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x,
-                              img/bg-map-desktop@2x.jpg 2x">
+              <source media="(min-width: 960px)" srcset="img/bg-map-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" type="image/webp" srcset="img/bg-map-tablet@1x.webp 1x,
                               img/bg-map-tablet@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x,
                               img/bg-map-tablet@2x.jpg 2x">
               <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
-              <img class="map__photo" src="img/bg-map-mobile@1x.jpg" width="320" height="350" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Фото карты">
+              <source media="(min-width: 320px)" srcset="img/bg-map-mobile@1x.jpg 1x,
+                              img/bg-map-mobile@2x.jpg 2x">
+              <img class="map__photo" src="img/bg-map-desktop@1x.jpg" width="320" height="350" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Фото карты">
             </picture>
           </a>
           <img class="map__marker" src="img/icon-map-marker.svg" width="27" height="27" alt="Маркер карты">
