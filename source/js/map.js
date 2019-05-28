@@ -1,4 +1,4 @@
-google.maps.event.addDomListener(window, 'load', init);
+google.maps.event.addDomListener(window, "load", init);
 var map;
 function init() {
     // Basic options for a simple Google Map
@@ -23,15 +23,15 @@ function init() {
     };
     // Get the HTML DOM element that will contain your map
     // We are using a div with id="map" seen below in the <body>
-    var mapElement = document.getElementById('map');
+    var mapElement = document.getElementById("map");
     // Create the Google Map using our element and options defined above
     var map = new google.maps.Map(mapElement, mapOptions);
-    // Let's also add a marker while we're at it
+    // Let"s also add a marker while we"re at it
     var marker = new google.maps.Marker({
         position: new google.maps.LatLng(34.844931, -111.803893),
         map: map,
-        title: 'Keks!',
+        title: "Sedona",
         animation: google.maps.Animation.DROP,
-        icon: 'img/icon-map-marker.svg'
+        icon: "img/icon-map-marker.svg"
     });
 }
