@@ -55,7 +55,7 @@
           </div>
           <a href="img/main-city-desktop@1x.jpg">
             <picture class="promotion__picture">
-              <source media="(min-width: 960px)" type="image/webp" srcset="img/main-city-desktop@2x.webp 2x">
+              <source media="(min-width: 960px)" type="image/webp" srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x">
               <source media="(min-width: 960px)" srcset="img/main-city-desktop@1x.jpg 1x,
                                   img/main-city-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" type="image/webp" srcset="img/main-city-tablet@1x.webp 1x,
@@ -63,9 +63,7 @@
               <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x,
                                   img/main-city-tablet@2x.jpg 2x">
               <source media="(min-width: 320px)" type="image/webp" srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x">
-              <source media="(min-width: 320px)" srcset="img/main-city-mobile@1x.jpg 1x,
-                                  img/main-city-mobile@2x.jpg 2x">
-              <img class="promotion__photo" src="img/main-city-desktop@1x.jpg" width="320" height="260" alt=" Фото Седоны">
+              <img class="promotion__photo" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt=" Фото Седоны" srcset="img/main-city-mobile@2x.jpg 2x">
             </picture>
           </a>
         </section>
@@ -112,9 +110,7 @@
               <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x,
                               img/main-bridge-tablet@2x.jpg 2x">
               <source media="(min-width: 320px)" type="image/webp" srcset="img/main-bridge-mobile@1x.webp 1x, img/main-bridge-mobile@2x.webp 2x">
-              <source media="(min-width: 320px)" srcset="img/main-bridge-mobile@1x.jpg 1x,
-                              img/main-bridge-mobile2x.jpg 2x">
-              <img class="promotion__photo" src="img/main-bridge-desktop@1x.jpg" width="320" height="260" alt="Фото моста Дьявола">
+              <img class="promotion__photo" src="img/main-bridge-mobile@1x.jpeg" width="320" height="260" alt="Фото моста Дьявола" srcset="img/main-bridge-mobile@2x.jpeg 2x">
             </picture>
           </a>
         </section>
@@ -146,16 +142,14 @@
           <h3 class="visually-hidden">Карта Седоны</h3>
           <a href="img/bg-map-desktop@1x.jpg">
             <picture class="map__picture">
-              <source media="(min-width: 960px)" type="image/webp" srcset="img/bg-map-desktop@2x.webp 2x">
-              <source media="(min-width: 960px)" srcset="img/bg-map-desktop@2x.jpg 2x">
+              <source media="(min-width: 960px)" type="image/webp" srcset="img/bg-map-desktop@webp 1x, img/bg-map-desktop@2x.webp 2x">
+              <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" type="image/webp" srcset="img/bg-map-tablet@1x.webp 1x,
                               img/bg-map-tablet@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x,
                               img/bg-map-tablet@2x.jpg 2x">
               <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
-              <source media="(min-width: 320px)" srcset="img/bg-map-mobile@1x.jpg 1x,
-                              img/bg-map-mobile@2x.jpg 2x">
-              <img class="map__photo" src="img/bg-map-desktop@1x.jpg" width="320" height="350" alt="Фото карты">
+              <img class="map__photo" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Фото карты" srcset="img/bg-map-mobile@2x.jpg 2x">
             </picture>
           </a>
           <img class="map__marker" src="img/icon-map-marker.svg" width="27" height="27" alt="Маркер карты">
@@ -192,27 +186,46 @@
       </footer>
     </div>
     <script src="js/main.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvW6Sx_MbbGXpHPutngDzNrPIPaaceVW0&callback=initMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvW6Sx_MbbGXpHPutngDzNrPIPaaceVW0"></script>
     <script>
+        google.maps.event.addDomListener(window, 'load', init);
         var map;
-        function initMap() {
-          var coordinates = {lat: 34.862405, lng: 111.761808},
-          map = new google.maps.Map(document.querySelector('.map'), {
-            center: coordinates
-          }),
-
-          marker = new google.maps.Marker({
-            position: coordinates,
-            map: map,
-            animation: google.maps.Animation.BOUNCE
-          }),
-          image = "img/icon-map-marker.svg",
-          marker = new google.maps.Marker({
-            position: coordinates,
-            map: map,
-            icon: image
-          });
+        function init() {
+            // Basic options for a simple Google Map
+            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+            var mapOptions = {
+                // How zoomed in you want the map to start at (always required)
+                zoom: 18,
+                // The latitude and longitude to center the map (always required)
+                center: new google.maps.LatLng(34.844931, -111.803893), // Keks
+                zoomControl: true,
+                zoomControlOptions: {
+                  position: google.maps.ControlPosition.LEFT_BOTTOM
+                },
+                mapTypeControl: false,
+                scaleControl: false,
+                streetViewControl: false,
+                rotateControl: false,
+                fullscreenControl: false,
+                // How you would like to style the map.
+                // This is where you would paste any style found on Snazzy Maps.
+                // styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+            };
+            // Get the HTML DOM element that will contain your map
+            // We are using a div with id="map" seen below in the <body>
+            var mapElement = document.getElementById('map');
+            // Create the Google Map using our element and options defined above
+            var map = new google.maps.Map(mapElement, mapOptions);
+            // Let's also add a marker while we're at it
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(34.844931, -111.803893),
+                map: map,
+                title: 'Keks!',
+                animation: google.maps.Animation.DROP,
+                icon: 'img/icon-map-marker.svg'
+            });
         }
       </script>
+      <script src="js/picturefill.min.js"></script>
   </body>
 </html>
