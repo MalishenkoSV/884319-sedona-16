@@ -5,7 +5,7 @@ var sourcemap = require("gulp-sourcemaps");
 
 var less = require("gulp-less");
 var postcss = require("gulp-postcss");
-var jsmin = require("gulp-uglyfly");
+
 var htmlmin = require("gulp-htmlmin");
 
 var autoprefixer = require("autoprefixer");
@@ -55,13 +55,7 @@ gulp.task("html", function () {
     .pipe(server.stream());
 });
 
-gulp.task("script", function () {
-  return gulp.src("source/js/**/*.js")
-    .pipe(plumber())
-    .pipe(jsmin())
-    .pipe(rename({suffix: ".min"}))
-    .pipe(gulp.dest("build/js"))
-});
+
 
 gulp.task("images", function() {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
