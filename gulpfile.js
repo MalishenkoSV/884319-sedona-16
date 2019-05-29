@@ -5,7 +5,6 @@ var sourcemap = require("gulp-sourcemaps");
 
 var less = require("gulp-less");
 var postcss = require("gulp-postcss");
-
 var htmlmin = require("gulp-htmlmin");
 
 var autoprefixer = require("autoprefixer");
@@ -54,8 +53,6 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build/"))
     .pipe(server.stream());
 });
-
-
 
 gulp.task("images", function() {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
